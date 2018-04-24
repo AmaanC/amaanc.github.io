@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>What The Blog?</title>
-    <link>https://blog.whatthedude.com/</link>
+    <link>http://blog.whatthedude.com/</link>
     <description>Recent content on What The Blog?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://blog.whatthedude.com/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://blog.whatthedude.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     
     <item>
       <title>The Journey to GSoC 2018 - just the beginning</title>
-      <link>https://blog.whatthedude.com/journey-to-gsoc/</link>
+      <link>http://blog.whatthedude.com/journey-to-gsoc/</link>
       <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.whatthedude.com/journey-to-gsoc/</guid>
+      <guid>http://blog.whatthedude.com/journey-to-gsoc/</guid>
       <description>Placeholder. Real content incoming soon!</description>
     </item>
     
@@ -25,10 +25,10 @@
     
     <item>
       <title>The Journey to GSoC 2018 - just the beginning</title>
-      <link>https://blog.whatthedude.com/journey-to-gsoc2018/</link>
+      <link>http://blog.whatthedude.com/journey-to-gsoc2018/</link>
       <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.whatthedude.com/journey-to-gsoc2018/</guid>
+      <guid>http://blog.whatthedude.com/journey-to-gsoc2018/</guid>
       <description>Placeholder. Real content incoming soon!</description>
     </item>
     

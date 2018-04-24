@@ -3,40 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.whatthedude.com/journey-to-gsoc/</loc>
+    <loc>http://blog.whatthedude.com/journey-to-gsoc/</loc>
     <lastmod>2018-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.whatthedude.com/journey-to-gsoc2018/</loc>
+    <loc>http://blog.whatthedude.com/journey-to-gsoc2018/</loc>
     <lastmod>2018-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.whatthedude.com/categories/</loc>
+    <loc>http://blog.whatthedude.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.whatthedude.com/tags/gsoc/</loc>
-    <lastmod>2018-04-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.whatthedude.com/post/</loc>
+    <loc>http://blog.whatthedude.com/tags/gsoc/</loc>
     <lastmod>2018-04-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.whatthedude.com/tags/</loc>
+    <loc>http://blog.whatthedude.com/post/</loc>
     <lastmod>2018-04-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.whatthedude.com/</loc>
+    <loc>http://blog.whatthedude.com/tags/</loc>
+    <lastmod>2018-04-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.whatthedude.com/</loc>
     <lastmod>2018-04-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
