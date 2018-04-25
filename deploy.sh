@@ -27,11 +27,11 @@ hugo
 
 echo "blog.whatthedude.com" > public/CNAME
 
-msg="Publishing to master at `date`"
-echo "$msg"
+msg="deploy: `git log -1 --pretty=%B content --`"
 
 if [ $# -eq 1 ]
   then msg="$1"
 fi
 
+echo "Commit message: $msg"
 cd public && git add --all && git commit -m "$msg"
