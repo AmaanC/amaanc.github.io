@@ -1,4 +1,4 @@
-baseurl = "http://blog.whatthedude.com/"
+baseurl = "https://blog.whatthedude.com/"
 languageCode = "en-us"
 title = "What The Blog?"
 theme = "hugo-natrium-theme"
