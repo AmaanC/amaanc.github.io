@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.40" />
+
+
+<title>Introduction to my GSoC project: An RTEMS x86-64 port - What The Blog?</title>
+<meta property="og:title" content="Introduction to my GSoC project: An RTEMS x86-64 port - What The Blog?">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://blog.whatthedude.com/css/main.css" media="all">
+<link rel="stylesheet" href="https://blog.whatthedude.com/css/fonts.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://blog.whatthedude.com/" class="nav-logo">
+    <img src="https://blog.whatthedude.com/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/categories">Categories</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+    <li><a href="/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+  <article class="article">
+    <h1 class="article-title">Introduction to my GSoC project: An RTEMS x86-64 port</h1>
+    
+    <span class="article-date">2018-04-25</span>
+    
+
+    <div class="article-content">
+      <p>RTEMS is an RTOS which can run on tons of architectures and processor families
+within those architectures.</p>
+
+<p>However, the modern Intel <code>x86-64</code> / <code>AMD64</code> is not one of the currently
+supported architectures.</p>
+
+<p><code>&lt;infomerical time&gt;</code></p>
+
+<p><em>Have you ever wanted to try a new operating system for your project, but all
+the emulators for your target processor support a limited number of features,
+and you <strong>really</strong> don&rsquo;t want to have to test it all on your hardware?</em></p>
+
+<p><code>&lt;/infomercial time&gt;</code></p>
+
+<p>To be fair, RTEMS <em>does</em> target the i386, but that involves maintaining a lot of
+legacy code which the community would really rather not do.</p>
+
+<p>This is where my proposal comes in - it targets modern, off-the-shelf hardware,
+like the x86-64 processors most of us use day-to-day, supporting only the modern
+non-legacy features (such as UEFI only, not BIOS).</p>
+
+<p>If you want to dig into the nitty-gritty, <a href="https://docs.google.com/document/d/1X79Yj0DNqvaDFqpJMUX4gF3WC550GDvVDS5QufvAnFE/">have a look at my project
+proposal</a>,
+and the <a href="https://devel.rtems.org/wiki/GSoC/2018/x86_64_BSP">project page on RTEMS&rsquo; Wiki, which will act as an evolving document as
+the project continues.</a></p>
+
+    </div>
+ 
+    <ul class="article-taxonomy">
+                  
+      <hr>
+      <li>
+        <i class="fa fa-category"></i><a href="/categories/tech">tech</a>
+      </li>
+      
+    
+      
+      <li>
+        <i class="fa fa-tags"></i><a href="/tags/gsoc">gsoc</a><a href="/tags/rtems">rtems</a>
+      </li>
+      
+  </article>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://blog.whatthedude.com/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> RSS feed</a>
+          </li>
+          <li>
+            <a href="https://github.com/mobybit/hugo-natrium-theme"><i class="fa fa-github"></i> Code</a>
+          </li>
+          <li>
+            <a href="https://blog.whatthedude.com/site-notice">Site notice</a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
+

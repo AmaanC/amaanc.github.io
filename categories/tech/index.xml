@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>What The Blog?</title>
-    <link>https://blog.whatthedude.com/</link>
-    <description>Recent content on What The Blog?</description>
+    <title>Tech on What The Blog?</title>
+    <link>https://blog.whatthedude.com/categories/tech/</link>
+    <description>Recent content in Tech on What The Blog?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Apr 2018 20:08:56 +0530</lastBuildDate>
     
-        <atom:link href="https://blog.whatthedude.com/index.xml" rel="self" type="application/rss+xml" />
-    
+	<atom:link href="https://blog.whatthedude.com/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -24,10 +23,6 @@ However, the modern Intel x86-64 / AMD64 is not one of the currently supported a
 Have you ever wanted to try a new operating system for your project, but all the emulators for your target processor support a limited number of features, and you really don&amp;rsquo;t want to have to test it all on your hardware?</description>
     </item>
     
-    
-    
-    
-    
     <item>
       <title>The Journey to GSoC 2018 - just the beginning</title>
       <link>https://blog.whatthedude.com/post/journey-to-gsoc/</link>
@@ -37,7 +32,6 @@ Have you ever wanted to try a new operating system for your project, but all the
       <description>Here I&amp;rsquo;ll document some of the preperatory tasks I undertook as part of my proposal to RTEMS (AN RTOS THAT&amp;rsquo;S BEEN TO SPACE! SPAAAAAAAAAACE!).
 The Hunt To start at the beginning, I&amp;rsquo;m going to have to just say that finding an organization that piques your interest and needs a project that hits just the sweet-spot in &amp;ldquo;I have most of the skills to do this, but I&amp;rsquo;ll still need to learn and grow a lot to bring it to fruition&amp;rdquo; is hard.</description>
     </item>
-    
     
   </channel>
 </rss>

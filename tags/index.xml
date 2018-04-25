@@ -6,7 +6,7 @@
     <description>Recent content in Tags on What The Blog?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Apr 2018 20:08:56 +0530</lastBuildDate>
     
 	<atom:link href="https://blog.whatthedude.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>Gsoc</title>
       <link>https://blog.whatthedude.com/tags/gsoc/</link>
-      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 25 Apr 2018 20:08:56 +0530</pubDate>
       
       <guid>https://blog.whatthedude.com/tags/gsoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rtems</title>
+      <link>https://blog.whatthedude.com/tags/rtems/</link>
+      <pubDate>Wed, 25 Apr 2018 20:08:56 +0530</pubDate>
+      
+      <guid>https://blog.whatthedude.com/tags/rtems/</guid>
       <description></description>
     </item>
     

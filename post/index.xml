@@ -6,18 +6,31 @@
     <description>Recent content in Posts on What The Blog?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Apr 2018 20:08:56 +0530</lastBuildDate>
     
 	<atom:link href="https://blog.whatthedude.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Introduction to my GSoC project: An RTEMS x86-64 port</title>
+      <link>https://blog.whatthedude.com/post/rtems-x86-64-port-intro/</link>
+      <pubDate>Wed, 25 Apr 2018 20:08:56 +0530</pubDate>
+      
+      <guid>https://blog.whatthedude.com/post/rtems-x86-64-port-intro/</guid>
+      <description>RTEMS is an RTOS which can run on tons of architectures and processor families within those architectures.
+However, the modern Intel x86-64 / AMD64 is not one of the currently supported architectures.
+&amp;lt;infomerical time&amp;gt;
+Have you ever wanted to try a new operating system for your project, but all the emulators for your target processor support a limited number of features, and you really don&amp;rsquo;t want to have to test it all on your hardware?</description>
+    </item>
+    
+    <item>
       <title>The Journey to GSoC 2018 - just the beginning</title>
-      <link>https://blog.whatthedude.com/journey-to-gsoc2018/</link>
+      <link>https://blog.whatthedude.com/post/journey-to-gsoc/</link>
       <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.whatthedude.com/journey-to-gsoc2018/</guid>
-      <description>Placeholder. Real content incoming soon!</description>
+      <guid>https://blog.whatthedude.com/post/journey-to-gsoc/</guid>
+      <description>Here I&amp;rsquo;ll document some of the preperatory tasks I undertook as part of my proposal to RTEMS (AN RTOS THAT&amp;rsquo;S BEEN TO SPACE! SPAAAAAAAAAACE!).
+The Hunt To start at the beginning, I&amp;rsquo;m going to have to just say that finding an organization that piques your interest and needs a project that hits just the sweet-spot in &amp;ldquo;I have most of the skills to do this, but I&amp;rsquo;ll still need to learn and grow a lot to bring it to fruition&amp;rdquo; is hard.</description>
     </item>
     
   </channel>
