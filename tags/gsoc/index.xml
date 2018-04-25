@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gsoc on What The Blog?</title>
+    <link>http://blog.whatthedude.com/tags/gsoc/</link>
+    <description>Recent content in Gsoc on What The Blog?</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.whatthedude.com/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Journey to GSoC 2018 - just the beginning</title>
+      <link>http://blog.whatthedude.com/journey-to-gsoc2018/</link>
+      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.whatthedude.com/journey-to-gsoc2018/</guid>
+      <description>Placeholder. Real content incoming soon!</description>
+    </item>
+    
+  </channel>
+</rss>
