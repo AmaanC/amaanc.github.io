@@ -25,10 +25,10 @@ pygmentsStyle = "native"
     url = "/tags"
     weight = -120
 
-# [[menu.main]]
-#     name = "Categories"
-#     url = "/categories"
-#     weight = -130
+[[menu.main]]
+    name = "Categories"
+    url = "/categories"
+    weight = -130
 
 [params]
     description = ""
