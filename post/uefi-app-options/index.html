@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.40" />
+
+
+<title>Options for creating a UEFI application image - What The Blog?</title>
+<meta property="og:title" content="Options for creating a UEFI application image - What The Blog?">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://blog.whatthedude.com/css/main.css" media="all">
+<link rel="stylesheet" href="https://blog.whatthedude.com/css/fonts.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://blog.whatthedude.com/" class="nav-logo">
+    <img src="https://blog.whatthedude.com/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/categories">Categories</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+    <li><a href="/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+  <article class="article">
+    <h1 class="article-title">Options for creating a UEFI application image</h1>
+    
+    <span class="article-date">2018-05-18</span>
+    
+
+    <div class="article-content">
+      
+
+<h1 id="context">Context</h1>
+
+<p>This post is about some of the ways in which an operating system / kernel can be
+made to boot as a UEFI application image (through UEFI firmware).</p>
+
+<p>To be clear, let&rsquo;s make sure we have our definitions straight:</p>
+
+<ul>
+<li><strong>UEFI firmware</strong>: The vendor firmware itself, which may or may not support
+legacy BIOS options. On the OSDev side, we won&rsquo;t really have control over
+this. For emulation, I&rsquo;ll be using <a href="https://github.com/tianocore/tianocore.github.io/wiki/How-to-build-OVMF">TianoCore&rsquo;s
+OVMF</a>
+(OvmfPkgX64) specifically. <a href="https://devel.rtems.org/wiki/Developer/Simulators/QEMU#QEMUandUEFIusingOVMFEDKII">More setup instructions
+here.</a></li>
+<li><strong>UEFI application image</strong>: A relocatable <code>PE/COFF</code> executable file which the
+UEFI firmware loads through a FAT partition, usually the file
+<code>/EFI/BOOT/BOOTX64.EFI</code> on the filesystem.</li>
+</ul>
+
+<p>With RTEMS, we use a cross-compiler toolchain (for eg. <code>x86_64-rtems5-gcc</code>,
+instead of the host computer&rsquo;s <code>gcc</code>). The toolchain is built automatically by
+the <a href="http://git.rtems.org/rtems-source-builder">RTEMS Source Builder (RSB)</a>,
+which does cool things like pull in a release version of the various tools,
+backports patches that the RTEMS community may need (that are not in a release
+version yet), and compiles the entire toolchain. These tools (<code>gcc</code>, <code>binutils</code>,
+etc.) are then used to compile all of the RTEMS kernel, link the kernel to user
+applications, the testsuite, etc.</p>
+
+<h1 id="options">Options</h1>
+
+<h3 id="simplest-use-gnu-efi-then-use-objcopy-to-convert-elf-to-pei">Simplest: Use <code>gnu-efi</code>, then use <code>objcopy</code> to convert ELF to PEI</h3>
+
+<p>Likely the simplest option, and the <a href="https://github.com/freebsd/freebsd/blob/996b0b6d81cf31cd8d58af5d8b45f0b4945d960d/stand/efi/loader/Makefile#L98-L119">one used by
+FreeBSD</a>
+as well, and <a href="https://wiki.osdev.org/UEFI#Developing_with_GNU-EFI">documented on the OSDev
+Wiki</a>, is to:</p>
+
+<ul>
+<li>Build an ELF64 shared library including an <code>elf_main</code> function</li>
+<li>Link it with <code>gnu-efi</code>&rsquo;s libraries and <code>crt0</code> runtime</li>
+<li>Use <code>objcopy</code> with the <code>--target=efi-app-x86_64</code> / <code>--target=pei-x86-64</code>
+
+<ul>
+<li><code>x86_64-rtems5-objcopy</code> doesn&rsquo;t support the <code>pei-x86-64</code> target at the
+moment, but this is easy to add with <a href="https://gist.github.com/AmaanC/aa7145e631e9f20e35f9b133386d11c8#file-rtems-binutils-objcopy-pei-target-patch">this patch to bfd</a></li>
+</ul></li>
+<li>Put the PE image file on a FAT partition. <a href="https://gist.github.com/AmaanC/aa7145e631e9f20e35f9b133386d11c8#file-make-img-sh">Here&rsquo;s a quick script I used.</a></li>
+<li>Boot the PE image with UEFI firmware now</li>
+<li><a href="http://r33b.net/">ALL GLORY TO THE HYPNOTOAD!</a></li>
+</ul>
+
+<p>I&rsquo;ve tested this process with a &ldquo;hello world&rdquo; UEFI image using the
+<code>x86_64-rtems5-*</code> toolchain and confirmed it works in QEMU.</p>
+
+<p>(Reproduction steps:</p>
+
+<ul>
+<li>Use the RSB with my bfd patch to add the <code>pei-x86-64</code> target to
+<code>x86_64-rtems5-objcopy</code>. (I&rsquo;ll try to have this upstreamed based on
+discussions on the RTEMS developers mailing list.)</li>
+<li>Download gnu-efi</li>
+<li>Run <code>make CC=x86_64-rtems5-gcc OBJCOPY=x86_64-rtems5-objcopy ARCH=x86_64</code>
+within the project</li>
+<li>Run the <code>make-img.sh</code> script with the the path to the <code>t.efi</code> test file
+(within <code>gnu-efi-3.0.8/x86_64/apps/</code> at the moment)</li>
+<li>Run <code>qemu-system-x86_64 --bios /path/to/OVMF.fd -net none -cpu qemu64 -drive file=/path/to/uefi.img,if=ide</code>)</li>
+</ul>
+
+<p><strong>Note:</strong> This will involve making <code>gnu-efi</code> a part of the RTEMS build
+process. I&rsquo;m not sure where this will fit in yet and if there might be license
+incompatibility issues here.</p>
+
+<h3 id="use-a-tool-such-as-ipxe-s-elf2efi-utility">Use a tool such as <code>iPXE</code>&rsquo;s <code>elf2efi</code> utility</h3>
+
+<p>The iPXE bootloader includes a utility that can convert an existing ELF to an
+EFI bootable image. I haven&rsquo;t explored this option much since the one using
+<code>objcopy</code> seemed more standardized and one that would need less maintenance
+overall to me. There would also be licensing considerations, and we would have
+to confirm that the tool runs on all hosts that RTEMS intends to support for
+development.</p>
+
+<p><a href="https://github.com/joyent/ipxe/blob/master/src/util/elf2efi.c">https://github.com/joyent/ipxe/blob/master/src/util/elf2efi.c</a></p>
+
+<h3 id="use-an-assembly-generated-pe-header-for-a-chimera-elf">Use an assembly-generated PE header for a &ldquo;chimera&rdquo; ELF?</h3>
+
+<p>The <code>wimboot</code> project associated with <code>iPXE</code> includes a <a href="https://github.com/ipxe/wimboot/blob/master/src/prefix.S"><code>prefix.S</code> file which
+seems to generate the PE header
+table</a> automagically
+in assembly, allowing us to possibly create a chimeric file which can act like a
+PE - I&rsquo;m not sure about the differences between ELF and PE and how compatible
+they are, so I can&rsquo;t speak to how viable this method is, but it seems like
+something that <em>has</em> worked for some in the past; namely the Linux kernel uses a
+technique called the EFI boot stub (or EFISTUB for short), using a <a href="https://github.com/torvalds/linux/blob/master/arch/x86/boot/header.S"><code>header.S</code>
+file to masquerade itself as a PE/COFF
+image</a>. This
+is <a href="https://www.kernel.org/doc/Documentation/efi-stub.txt">documented here</a> and
+on the <a href="https://wiki.archlinux.org/index.php/EFISTUB">Arch Wiki here</a> as well.</p>
+
+<p>Given the possible license incompatibilities with the RTEMS project and the need
+to shave a PE file-format yak, I&rsquo;m leaning away from this method.</p>
+
+<hr />
+
+<p>P.S. - I&rsquo;d like to say thanks to Chris Johns for helping me discover that the
+last 2 options were even a possibility. Thank you! :D</p>
+
+<hr />
+
+<p>Conclusion: I&rsquo;m leaning towards the first method, but I&rsquo;d love to hear what you
+think about the options I&rsquo;ve laid out, and for any others I may have missed. Hit
+me up! The RTEMS mailing list discussion thread is [here]().</p>
+
+<hr />
+
+<h2 id="important-resources">Important resources:</h2>
+
+<ul>
+<li><a href="https://wiki.osdev.org/UEFI">https://wiki.osdev.org/UEFI</a></li>
+<li><a href="https://wiki.osdev.org/UEFI_Bare_Bones">https://wiki.osdev.org/UEFI_Bare_Bones</a></li>
+<li><a href="http://sourceforge.net/projects/gnu-efi/">http://sourceforge.net/projects/gnu-efi/</a></li>
+<li><a href="https://github.com/joyent/ipxe/blob/master/src/util/elf2efi.c">https://github.com/joyent/ipxe/blob/master/src/util/elf2efi.c</a></li>
+<li><a href="https://github.com/ipxe/wimboot/blob/master/src/prefix.S">https://github.com/ipxe/wimboot/blob/master/src/prefix.S</a></li>
+<li><a href="https://github.com/torvalds/linux/blob/master/arch/x86/boot/header.S">https://github.com/torvalds/linux/blob/master/arch/x86/boot/header.S</a></li>
+<li><a href="https://www.kernel.org/doc/Documentation/efi-stub.txt">https://www.kernel.org/doc/Documentation/efi-stub.txt</a></li>
+</ul>
+
+    </div>
+ 
+    <ul class="article-taxonomy">
+                  
+      <hr>
+      <li>
+        <i class="fa fa-category"></i><a href="/categories/tech">tech</a>
+      </li>
+      
+    
+      
+      <li>
+        <i class="fa fa-tags"></i><a href="/tags/gsoc">gsoc</a><a href="/tags/rtems">rtems</a>
+      </li>
+      
+  </article>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://blog.whatthedude.com/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> RSS feed</a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+  <script src="https://blog.whatthedude.com/js/external-newtab.js"></script>
+  </body>
+</html>
+

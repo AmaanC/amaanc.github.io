@@ -6,9 +6,22 @@
     <description>Recent content on What The Blog?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Apr 2018 20:08:56 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 18 May 2018 14:54:32 +0530</lastBuildDate>
     
         <atom:link href="https://blog.whatthedude.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>Options for creating a UEFI application image</title>
+      <link>https://blog.whatthedude.com/post/uefi-app-options/</link>
+      <pubDate>Fri, 18 May 2018 14:54:32 +0530</pubDate>
+      
+      <guid>https://blog.whatthedude.com/post/uefi-app-options/</guid>
+      <description>Context This post is about some of the ways in which an operating system / kernel can be made to boot as a UEFI application image (through UEFI firmware).
+To be clear, let&amp;rsquo;s make sure we have our definitions straight:
+ UEFI firmware: The vendor firmware itself, which may or may not support legacy BIOS options. On the OSDev side, we won&amp;rsquo;t really have control over this. For emulation, I&amp;rsquo;ll be using TianoCore&amp;rsquo;s OVMF (OvmfPkgX64) specifically.</description>
+    </item>
     
     
     
