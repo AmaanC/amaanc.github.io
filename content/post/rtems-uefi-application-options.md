@@ -108,7 +108,8 @@ last 2 options were even a possibility. Thank you! :D
 
 Conclusion: I'm leaning towards the first method, but I'd love to hear what you
 think about the options I've laid out, and for any others I may have missed. Hit
-me up! The RTEMS mailing list discussion thread is [here]().
+me up! The [RTEMS mailing list discussion thread for this blog post is
+here](https://lists.rtems.org/pipermail/devel/2018-May/021622.html).
 
 --------------------------------------------------------------------------------
 
