@@ -6,10 +6,21 @@
     <description>Recent content in Rtems on What The Blog?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 May 2018 14:54:32 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 02 Jun 2018 12:24:39 +0530</lastBuildDate>
     
 	<atom:link href="https://blog.whatthedude.com/tags/rtems/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>gnu-efi integration: kernel.so or loader.so&#43;kernel.elf</title>
+      <link>https://blog.whatthedude.com/post/gnu-efi-kernel-so/</link>
+      <pubDate>Sat, 02 Jun 2018 12:24:39 +0530</pubDate>
+      
+      <guid>https://blog.whatthedude.com/post/gnu-efi-kernel-so/</guid>
+      <description>In this post, we&amp;rsquo;ll discuss the 2 possible methods of integrating gnu-efi into your project to make your kernel / OS &amp;ldquo;UEFI-aware&amp;rdquo; (i.e. capable of booting through UEFI firmware).
+Other options (without using gnu-efi) are laid out in my previous blog post on the topic.
+Relevant context gnu-efi has one key constraint that requires our project&amp;rsquo;s files to be built as shared libraries when linked with libefi and libgnuefi. Namely, from the gnu-efi project&amp;rsquo;s README:</description>
+    </item>
     
     <item>
       <title>Options for creating a UEFI application image</title>

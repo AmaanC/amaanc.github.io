@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.40" />
+
+
+<title>gnu-efi integration: kernel.so or loader.so&#43;kernel.elf - What The Blog?</title>
+<meta property="og:title" content="gnu-efi integration: kernel.so or loader.so&#43;kernel.elf - What The Blog?">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://blog.whatthedude.com/css/main.css" media="all">
+<link rel="stylesheet" href="https://blog.whatthedude.com/css/fonts.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://blog.whatthedude.com/" class="nav-logo">
+    <img src="https://blog.whatthedude.com/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/categories">Categories</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+    <li><a href="/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+  <article class="article">
+    <h1 class="article-title">gnu-efi integration: kernel.so or loader.so&#43;kernel.elf</h1>
+    
+    <span class="article-date">2018-06-02</span>
+    
+
+    <div class="article-content">
+      
+
+<p>In this post, we&rsquo;ll discuss the 2 possible methods of integrating <code>gnu-efi</code> into
+your project to make your kernel / OS &ldquo;UEFI-aware&rdquo; (i.e. capable of booting
+through UEFI firmware).</p>
+
+<p><a href="/post/uefi-app-options/">Other options (without using <code>gnu-efi</code>) are laid out in my previous blog post
+on the topic.</a></p>
+
+<h1 id="relevant-context">Relevant context</h1>
+
+<p><code>gnu-efi</code> has one key constraint that requires our project&rsquo;s files to be built
+as shared libraries when linked with <code>libefi</code> and <code>libgnuefi</code>. Namely, from the
+<code>gnu-efi</code> project&rsquo;s README:</p>
+
+<blockquote>
+<p>(2) EFI binaries should be relocatable.</p>
+
+<p>Since EFI binaries are executed in physical mode, EFI cannot
+    guarantee that a given binary can be loaded at its preferred
+    address.  EFI does <em>try</em> to load a binary at it&rsquo;s preferred
+    address, but if it can&rsquo;t do so, it will load it at another
+    address and then relocate the binary using the contents of the
+    .reloc section.</p>
+</blockquote>
+
+<p>And:</p>
+
+<blockquote>
+<p>The approach to building relocatable binaries in the GNU EFI build
+environment is to:</p>
+
+<p>(a) build an ELF shared object</p>
+
+<p>(b) link it together with a self-relocator that takes care of
+     applying the dynamic relocations that may be present in the
+     ELF shared object</p>
+
+<p>(c) convert the resulting image to an EFI binary</p>
+</blockquote>
+
+<h3 id="prerequisite-reading">Prerequisite reading</h3>
+
+<p>If you&rsquo;re unfamiliar with what load-time relocation is, or what PIC
+(position-independent code) is, read the following:</p>
+
+<ul>
+<li><a href="https://eli.thegreenplace.net/2011/08/25/load-time-relocation-of-shared-libraries/">https://eli.thegreenplace.net/2011/08/25/load-time-relocation-of-shared-libraries/</a></li>
+<li><a href="https://eli.thegreenplace.net/2011/11/03/position-independent-code-pic-in-shared-libraries/">https://eli.thegreenplace.net/2011/11/03/position-independent-code-pic-in-shared-libraries/</a></li>
+<li><a href="https://eli.thegreenplace.net/2011/11/11/position-independent-code-pic-in-shared-libraries-on-x64">https://eli.thegreenplace.net/2011/11/11/position-independent-code-pic-in-shared-libraries-on-x64</a></li>
+</ul>
+
+<p>If you&rsquo;re unsure of how <code>gnu-efi</code> works or how we convert its shared/dynamic
+library into a relocatable PE, read this section from my previous post:</p>
+
+<ul>
+<li><a href="/post/uefi-app-options/#simplest-use-gnu-efi-then-use-objcopy-to-convert-elf-to-pei">&ldquo;Options for creating a UEFI application image&rdquo;</a></li>
+</ul>
+
+<hr />
+
+<h1 id="the-bundled-approach">The bundled approach</h1>
+
+<p>To be able to compile the entire RTEMS kernel as a shared library, we&rsquo;ll need to
+handle a few issues:</p>
+
+<ul>
+<li>RTEMS uses Newlib, which is currently compiled as a static libc.a archive -
+this will cause us problems at link-time (if we use the <code>-shared</code> flag)
+because it&rsquo;ll include incompatible relocation entries such as <code>R_X86_64_32</code>.
+
+<ul>
+<li>Fortunately, <a href="https://lists.rtems.org/pipermail/devel/2018-June/021883.html">Sebastian had a simple but brilliant idea to solving this
+issue on the mailing
+list</a>. I
+could simply add <code>-fPIC</code> as a default option to GCC&rsquo;s configuration, and
+since the <code>RTEMS source builder</code> builds GCC, then compiles Newlib with
+this version of GCC, Newlib&rsquo;s <code>libc.a</code> will contain no incompatible
+relocation entries.</li>
+<li><a href="https://github.com/AmaanC/gcc/pull/1/commits/5f7531f9b9f72fcbd2738e535a2a18f2c706212f">This patch to configure GCC was fairly
+simple.</a>
+(I may not submit it upstream because we may end up going with something
+closer to the FreeBSD approach below instead.)</li>
+</ul></li>
+<li>GCC provides us with <code>crtbegin.o</code> and <code>crtend.o</code>, both of which also contain
+the incompatible <code>R_X86_64_32</code> entries.
+
+<ul>
+<li>We can just ask GCC to build the shared variants of these files,
+<code>crtbeginS.o</code> and <code>crtendS.o</code>, and have GCC use them whenever the <code>-shared</code>
+flag is used.</li>
+<li><a href="https://github.com/AmaanC/gcc/pull/1/commits/e3b6fe9d2073debcfccb26cb1513c5209aeccbe0">Relevant patch to GCC to handle this.</a></li>
+</ul></li>
+<li>We&rsquo;ll need to figure out a way to have <em>RTEMS</em> itself compile itself with
+<code>-fPIC</code> and build shared libraries.
+
+<ul>
+<li>Fortunately, even this is fairly simple because RTEMS uses the idea of a
+<code>bsp.cfg</code> file which can customize compiler flags, and we can simply add the
+relevant flags to our port&rsquo;s specific <code>amd64.cfg</code> file.</li>
+<li><a href="https://github.com/AmaanC/rtems-gsoc18/commit/547ef85a7f176046b2cb06a34b1e312c4986e97f">Relevant RTEMS
+patch.</a></li>
+</ul></li>
+</ul>
+
+<p>Obviously, this approach is fairly simple and would let us just package all of
+RTEMS neatly into a relocatable PE very easily.</p>
+
+<p>But what are the downsides of this approach?</p>
+
+<ul>
+<li>We may be <em>special-casing</em> the build system for UEFI beyond recognition, tying
+ourselves in too deeply to easily adapt to a different one, such as Multiboot
+support. This may not be as big a deal, but it&rsquo;s a concern to keep in mind.</li>
+<li>We have no real reason to use <code>-fPIC</code> and the GOT/PLT it brings with it in
+RTEMS, since it <em>will</em> be fully resolved, and in theory, we could figure out a
+way to make the linker fill in the relative-addressing relocations without
+needing a runtime GOT/PLT method.</li>
+<li>RTEMS <em>is</em> a kernel, involving interrupt-handling, context-switching,
+etc. It&rsquo;s entirely possible that this method has unintended consequences on
+how such code is generated later, when we start to actually use it. Chris
+Johns (one of this project&rsquo;s GSoC mentors) means to look into this.</li>
+</ul>
+
+<h1 id="the-freebsd-way">The FreeBSD way</h1>
+
+<p>FreeBSD takes a different approach. They have a multi-stage loading
+process. In brief:</p>
+
+<ul>
+<li>They build a two-stage bootloader for EFI, called boot1.efi and
+<a href="https://www.freebsd.org/cgi/man.cgi?loader(8)">loader.efi</a>.</li>
+<li>loader.efi is an interactive prompt which may autoboot, or a <code>boot kernelImg</code>
+command can be used to load the actual kernel.</li>
+<li>The kernel is loaded as an ELF through helper functions. The <a href="https://github.com/freebsd/freebsd/blob/433bd38e3a0349f9f89f9d54594172c75b002b74/stand/common/boot.c#L53"><code>command_boot</code>
+function</a>
+drives this:
+
+<ul>
+<li>In brief, through calls go through:</li>
+<li><code>command_boot -&gt; mod_loadkld -&gt; file_load -&gt;
+file_formats[i]-&gt;l_load</code> (actually the <code>loadfile</code> function in
+<a href="https://github.com/freebsd/freebsd/blob/d8596f6f687a64b994b065f3058155405dfc39db/stand/common/load_elf.c#L150"><code>load_elf.c</code></a>)</li>
+<li>The <code>loadfile</code> function parses the program and section headers of the ELF
+file (through more function detours that are not really important).</li>
+<li>Once the ELF has been loaded into memory at the correct <code>entry_addr</code> that it
+expects to be loaded at in memory, the
+<a href="https://github.com/freebsd/freebsd/blob/433bd38e3a0349f9f89f9d54594172c75b002b74/stand/common/boot.c#L107"><code>l_exec</code></a>
+function is called, which is actually <a href="https://github.com/freebsd/freebsd/blob/d8596f6f687a64b994b065f3058155405dfc39db/stand/efi/loader/arch/amd64/elf64_freebsd.c#L93"><code>elf64_exec</code> in
+<code>elf64_freebsd.c</code></a>,
+at which hopefully through trampolining magic, the control flow will
+transfer to the kernel or ELF module.</li>
+</ul></li>
+</ul>
+
+<p>TL;DR: FreeBSD&rsquo;s kernel is loaded as an ELF file into memory and then executed
+through trampolining magic.</p>
+
+<p>The benefits of this approach are:</p>
+
+<ul>
+<li>We&rsquo;d have a proper ELF loader in RTEMS, so the kernel changing over time
+doesn&rsquo;t mean needing to be concerned with how the UEFI build system may break
+because of it (for eg. how is handwritten assembly handled in terms of a
+relocatable shared library?).</li>
+<li>Our choice to support UEFI doesn&rsquo;t affect how the <em>entire</em> system is built -
+it only affects the codebase in terms of needing to add the ELF loader.</li>
+</ul>
+
+<p>Downsides:</p>
+
+<ul>
+<li>The loader may be a lot of complicated code, increasing the size and
+complexity of RTEMS and its images for x86-64.</li>
+<li>We&rsquo;d need to figure out a way to have a <code>loader.efi</code> which uses whatever UEFI
+boot services it needs to, and then calls into an ELF loader to load the
+actual ELF - the location of this ELF could be read from a configuration file
+or be based on convention. This isn&rsquo;t a downside as much as it is a thing
+worth noting.</li>
+</ul>
+
+<hr />
+
+<p>Finito.</p>
+
+    </div>
+ 
+    <ul class="article-taxonomy">
+                  
+      <hr>
+      <li>
+        <i class="fa fa-category"></i><a href="/categories/tech">tech</a>
+      </li>
+      
+    
+      
+      <li>
+        <i class="fa fa-tags"></i><a href="/tags/gsoc">gsoc</a><a href="/tags/rtems">rtems</a>
+      </li>
+      
+  </article>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://blog.whatthedude.com/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> RSS feed</a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+  <script src="https://blog.whatthedude.com/js/external-newtab.js"></script>
+  </body>
+</html>
+
