@@ -6,10 +6,20 @@
     <description>Recent content in Gsoc on What The Blog?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Jun 2018 12:24:39 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jul 2018 14:22:32 +0530</lastBuildDate>
     
 	<atom:link href="https://blog.whatthedude.com/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC: Phase 2 status update</title>
+      <link>https://blog.whatthedude.com/post/gsoc-phase-2-status/</link>
+      <pubDate>Mon, 16 Jul 2018 14:22:32 +0530</pubDate>
+      
+      <guid>https://blog.whatthedude.com/post/gsoc-phase-2-status/</guid>
+      <description>Since our last blog post, I realized that the RTEMS mailing list was a much more convenient method of actually having discussions, and making important decisions. In lieu of that, this blog doesn&amp;rsquo;t include all the decisions that have been made. I&amp;rsquo;ll summarize some of them here.
+Boot method Our very first conundrum was the boot method - how do we make our RTEMS kernel and user application UEFI-aware?</description>
+    </item>
     
     <item>
       <title>gnu-efi integration: kernel.so or loader.so&#43;kernel.elf</title>

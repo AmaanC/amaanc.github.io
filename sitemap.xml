@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.whatthedude.com/post/gsoc-phase-2-status/</loc>
+    <lastmod>2018-07-16T14:22:32+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.whatthedude.com/post/gnu-efi-kernel-so/</loc>
     <lastmod>2018-06-02T12:24:39+05:30</lastmod>
   </url>
@@ -34,7 +39,7 @@
   
   <url>
     <loc>https://blog.whatthedude.com/tags/gsoc/</loc>
-    <lastmod>2018-06-02T12:24:39+05:30</lastmod>
+    <lastmod>2018-07-16T14:22:32+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -46,31 +51,31 @@
   
   <url>
     <loc>https://blog.whatthedude.com/post/</loc>
-    <lastmod>2018-06-02T12:24:39+05:30</lastmod>
+    <lastmod>2018-07-16T14:22:32+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.whatthedude.com/tags/rtems/</loc>
-    <lastmod>2018-06-02T12:24:39+05:30</lastmod>
+    <lastmod>2018-07-16T14:22:32+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.whatthedude.com/tags/</loc>
-    <lastmod>2018-06-02T12:24:39+05:30</lastmod>
+    <lastmod>2018-07-16T14:22:32+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.whatthedude.com/categories/tech/</loc>
-    <lastmod>2018-06-02T12:24:39+05:30</lastmod>
+    <lastmod>2018-07-16T14:22:32+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.whatthedude.com/</loc>
-    <lastmod>2018-06-02T12:24:39+05:30</lastmod>
+    <lastmod>2018-07-16T14:22:32+05:30</lastmod>
     <priority>0</priority>
   </url>
   
