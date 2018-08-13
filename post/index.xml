@@ -6,10 +6,22 @@
     <description>Recent content in Posts on What The Blog?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Jul 2018 14:22:32 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 13 Aug 2018 14:22:32 +0530</lastBuildDate>
     
 	<atom:link href="https://blog.whatthedude.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC: The all-encompassing final report</title>
+      <link>https://blog.whatthedude.com/post/gsoc-final/</link>
+      <pubDate>Mon, 13 Aug 2018 14:22:32 +0530</pubDate>
+      
+      <guid>https://blog.whatthedude.com/post/gsoc-final/</guid>
+      <description>Hi! This blog post acts as the final report for GSoC, meant to summarize all of my work in one convenient package.
+Intro TL;DR: My GSoC proposal was to port RTEMS, a real-time operating system, to the Intel/AMD x86-64 architecture.
+(P.S. - RTEMS was recently used on NASA&amp;rsquo;s Parker Solar Probe!)
+Code talks If you&amp;rsquo;re only looking for all the code that was written during this GSoC, the links are here:</description>
+    </item>
     
     <item>
       <title>GSoC: Phase 2 status update</title>
