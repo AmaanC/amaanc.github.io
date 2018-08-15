@@ -178,8 +178,8 @@ mode), sets up some exception handlers, and jumps into the ELF64 kernel. (Our
 kernel later overrides just about all of those settings.)</p>
 
 <p><a href="http://web.archive.org/web/20180718114032/http://whatthedude.com/rtems/user/html/bsps/bsps-x86_64.html#boot-rtems-via-freebsd-s-bootloader">This FreeBSD based approach is documented
-here</a> (as
-an archive link because we&rsquo;d prefer not to stick with the FreeBSD bootloader
+here</a>
+(as an archive link because we&rsquo;d prefer not to stick with the FreeBSD bootloader
 forever given its forced use of the UFS filesystem). The documentation patches
 are:</p>
 
@@ -226,10 +226,9 @@ command).</p>
 
 <p>Eventually, I settled on adding static page tables with 1GiB super pages:</p>
 
-<p><strong>XXX</strong>: Replace with commit link once upstreamed</p>
-
 <ul>
-<li><a href="https://lists.rtems.org/pipermail/devel/2018-August/022831.html">RTEMS kernel patch for paging support</a></li>
+<li><a href="https://git.rtems.org/rtems/commit/?id=3da76f52521b323beb9d0b0b329cfc1ecfcad992">RTEMS kernel patch for paging
+support</a></li>
 </ul>
 
 <h1 id="interrupts">Interrupts</h1>
@@ -259,10 +258,9 @@ architecture, whcih is 256 vectors (0-0xff).</p>
 
 <p>The patch is:</p>
 
-<p><strong>XXX</strong></p>
-
 <ul>
-<li><a href="https://lists.rtems.org/pipermail/devel/2018-August/022832.html">RTEMS patch for interrupt support</a></li>
+<li><a href="https://git.rtems.org/rtems/commit/?id=e96ef57f8a2c8bed3be885067767d346650bd197">RTEMS patch for interrupt
+support</a></li>
 </ul>
 
 <h1 id="clock-driver-apic-timer-pit-local-apic-and-pic-come-along-for-the-ride">Clock driver (APIC timer, PIT, local APIC, and PIC come along for the ride)</h1>
@@ -294,10 +292,9 @@ interrupts are masked).</p>
 <code>CONFIGURE_MICROSECONDS_PER_TICK</code> to set the APIC Timer to run at the frequency
 such that it generates interrupts at that configured microsecond per tick rate.</p>
 
-<p><strong>XXX</strong></p>
-
 <ul>
-<li><a href="https://lists.rtems.org/pipermail/devel/2018-August/022833.html">RTEMS patch for the clock driver</a></li>
+<li><a href="https://git.rtems.org/rtems/commit/?id=7ed03fcbdb5e0b271e26ef95942349cfd24f1c95">RTEMS patch for the clock
+driver</a></li>
 </ul>
 
 <p>There <em>may</em> be a bug in the clock driver - ticker.exe seems to fail at
