@@ -115,8 +115,8 @@ mode), sets up some exception handlers, and jumps into the ELF64 kernel. (Our
 kernel later overrides just about all of those settings.)
 
 [This FreeBSD based approach is documented
-here](http://web.archive.org/web/20180718114032/http://whatthedude.com/rtems/user/html/bsps/bsps-x86_64.html#boot-rtems-via-freebsd-s-bootloader) (as
-an archive link because we'd prefer not to stick with the FreeBSD bootloader
+here](http://web.archive.org/web/20180718114032/http://whatthedude.com/rtems/user/html/bsps/bsps-x86_64.html#boot-rtems-via-freebsd-s-bootloader)
+(as an archive link because we'd prefer not to stick with the FreeBSD bootloader
 forever given its forced use of the UFS filesystem). The documentation patches
 are:
 
@@ -157,9 +157,8 @@ command).
 
 Eventually, I settled on adding static page tables with 1GiB super pages:
 
-**XXX**: Replace with commit link once upstreamed
-
-- [RTEMS kernel patch for paging support](https://lists.rtems.org/pipermail/devel/2018-August/022831.html)
+- [RTEMS kernel patch for paging
+  support](https://git.rtems.org/rtems/commit/?id=3da76f52521b323beb9d0b0b329cfc1ecfcad992)
 
 # Interrupts
 
@@ -186,9 +185,8 @@ architecture, whcih is 256 vectors (0-0xff).
 
 The patch is:
 
-**XXX**
-
-- [RTEMS patch for interrupt support](https://lists.rtems.org/pipermail/devel/2018-August/022832.html)
+- [RTEMS patch for interrupt
+  support](https://git.rtems.org/rtems/commit/?id=e96ef57f8a2c8bed3be885067767d346650bd197)
 
 # Clock driver (APIC timer, PIT, local APIC, and PIC come along for the ride)
 
@@ -219,9 +217,8 @@ Once the APIC timer is calibrated, we use the RTEMS configurable
 `CONFIGURE_MICROSECONDS_PER_TICK` to set the APIC Timer to run at the frequency
 such that it generates interrupts at that configured microsecond per tick rate.
 
-**XXX**
-
-- [RTEMS patch for the clock driver](https://lists.rtems.org/pipermail/devel/2018-August/022833.html)
+- [RTEMS patch for the clock
+  driver](https://git.rtems.org/rtems/commit/?id=7ed03fcbdb5e0b271e26ef95942349cfd24f1c95)
 
 There _may_ be a bug in the clock driver - ticker.exe seems to fail at
 optimization level `-O2`. See this mailing list discussion for more:
