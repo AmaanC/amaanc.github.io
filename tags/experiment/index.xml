@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Experiment on What The Blog?</title>
+    <link>https://blog.whatthedude.com/tags/experiment/</link>
+    <description>Recent content in Experiment on What The Blog?</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Aug 2018 14:22:32 +0530</lastBuildDate>
+    
+	<atom:link href="https://blog.whatthedude.com/tags/experiment/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Experiment: A Breadth-First Search on Careers</title>
+      <link>https://blog.whatthedude.com/post/experiment/</link>
+      <pubDate>Mon, 27 Aug 2018 14:22:32 +0530</pubDate>
+      
+      <guid>https://blog.whatthedude.com/post/experiment/</guid>
+      <description>Context I recently finished an undergrad degree at a college I hated (horribly bureaucratic, untrained professors, donkey-work for projects/assignments).
+I feel like I have a 4 year debt to make up for - skills I should have learned in my undergrad, but never had the time to. In the coming year or so, I&amp;rsquo;m hoping to fix that by experimenting much more, and hopefully picking up skills that I think are important to me.</description>
+    </item>
+    
+  </channel>
+</rss>

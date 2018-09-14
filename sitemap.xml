@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.whatthedude.com/post/experiment/</loc>
+    <lastmod>2018-08-27T14:22:32+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.whatthedude.com/post/gsoc-final/</loc>
     <lastmod>2018-08-13T14:22:32+05:30</lastmod>
   </url>
@@ -43,6 +48,12 @@
   </url>
   
   <url>
+    <loc>https://blog.whatthedude.com/tags/experiment/</loc>
+    <lastmod>2018-08-27T14:22:32+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.whatthedude.com/tags/gsoc/</loc>
     <lastmod>2018-08-13T14:22:32+05:30</lastmod>
     <priority>0</priority>
@@ -55,8 +66,14 @@
   </url>
   
   <url>
+    <loc>https://blog.whatthedude.com/categories/personal/</loc>
+    <lastmod>2018-08-27T14:22:32+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.whatthedude.com/post/</loc>
-    <lastmod>2018-08-13T14:22:32+05:30</lastmod>
+    <lastmod>2018-08-27T14:22:32+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -68,7 +85,7 @@
   
   <url>
     <loc>https://blog.whatthedude.com/tags/</loc>
-    <lastmod>2018-08-13T14:22:32+05:30</lastmod>
+    <lastmod>2018-08-27T14:22:32+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -80,7 +97,7 @@
   
   <url>
     <loc>https://blog.whatthedude.com/</loc>
-    <lastmod>2018-08-13T14:22:32+05:30</lastmod>
+    <lastmod>2018-08-27T14:22:32+05:30</lastmod>
     <priority>0</priority>
   </url>
   
