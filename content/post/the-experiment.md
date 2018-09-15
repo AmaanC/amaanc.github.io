@@ -37,6 +37,10 @@ subjects at a time is likely the most I can handle.
   its own respective fields when I get around to it
 - Math (topology, category theory, chaos theory)
 - Programming language theory
+- Compiler theory (optimizations, transformations, safety)
+- Embedded systems and electronics
+- Cryptography?
+- Distributed systems and server-management
 - Quantum computing
 - Neuroscience, neurobiology, neuroengineering
   ([braaiiiiinsssss!](https://i.imgur.com/ibsNHc6.png))
@@ -60,13 +64,14 @@ these skills are:
   memory problems, paralysis), through whatever means (programming the brain,
   cyborg prosthetics, technology-aids), we could help unleash the potential of
   _so many_ more people.
-
-Some skills like sales, marketing, illustration, I don't really care for myself,
-but I do believe a basic knowledge in these areas is necessary if I'm to succeed
-in my larger goals. I'm okay to pick up enough to understand when I've found a
-brilliant salesperson or illustrator. Besides, I believe anything can be
-interesting if you dive deep enough and actually scratch the surface. There's
-always complexity that can be fascinating.
+- Communication - our ideas are worthless if we can't actually communicate them
+  and have others help make them reality. Some skills like sales, marketing,
+  illustration, I don't really care for myself, but I do believe a basic
+  knowledge in these areas is necessary if I'm to succeed in my larger
+  goals. I'm okay to pick up enough to understand when I've found a brilliant
+  salesperson or illustrator. Besides, I believe anything can be interesting if
+  you dive deep enough and actually scratch the surface. There's always
+  complexity that can be fascinating.
 
 -------------------------------------------------------------------------------
 
