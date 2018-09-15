@@ -37,9 +37,23 @@ subjects at a time is likely the most I can handle.
   its own respective fields when I get around to it
 - Math (topology, category theory, chaos theory)
 - Programming language theory
+  - Lobsters [ML](https://lobste.rs/t/ml) and [formalmethods tags](https://lobste.rs/t/formalmethods)
+  - [SIGPLAN research papers](http://www.sigplan.org/Highlights/Papers/)
+  - Consider learning programming languages like:
+    - Rust (The Rust Programming Language)
+    - OCaml (Real World OCaml)
+    - Haskell (Learn You a Haskell, [Haskell
+      Wiki](https://wiki.haskell.org/Typeclassopedia))
+    - Common Lisp ([Practical Common Lisp](http://gigamonkeys.com/book/))
+    - Erlang?
+  - [PLFA](https://plfa.github.io/) (theory-heavy)
+  - [Software Foundations](https://softwarefoundations.cis.upenn.edu/)
+    (theory-heavy and difficult)
 - Compiler theory (optimizations, transformations, safety)
+  - Dragon book?
+  - Polytope model optimizations (studying this was lots of fun, I'd like more)
 - Embedded systems and electronics
-- Cryptography?
+- Cryptography (Dan Boneh's textbook, https://cryptoeconomics.study/, https://cryptopals.com/)
 - Distributed systems and server-management
 - Quantum computing
 - Neuroscience, neurobiology, neuroengineering
