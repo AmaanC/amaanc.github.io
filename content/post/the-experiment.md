@@ -107,6 +107,16 @@ protection, and increased usability _without_ sacrificing performance.
 
 Also, I need to learn me some Rust for my day-job, a convenient coincidence.
 
+I think the activities that'll help me learn it are:
+
+- Reading a lot of varied Rust code (Github
+  ([Deno](https://github.com/denoland/deno) looks interesting), [CodeReview on
+  StackExchange](https://codereview.stackexchange.com/questions/tagged/rust),
+  answering questions on StackOverflow)
+- Reading [The Rust Programming Language](https://doc.rust-lang.org/book/second-edition/)
+- [/r/rust](https://www.reddit.com/r/rust/) for misc. discovery
+- [Conference talks on YouTube](https://www.youtube.com/channel/UCaYhcUwRBNscFNUKTjgPFiA)
+
 -------------------------------------------------------------------------------
 
 Please contact me on [Twitter (@AmaanC)](https://twitter.com/AmaanC) if you have
