@@ -41,7 +41,7 @@ subjects at a time is likely the most I can handle.
   - [SIGPLAN research papers](http://www.sigplan.org/Highlights/Papers/)
   - Consider learning programming languages like:
     - Rust (The Rust Programming Language)
-    - OCaml (Real World OCaml)
+    - OCaml (Real World OCaml, [Try OCaml Pro online](https://try.ocamlpro.com/))
     - Haskell (Learn You a Haskell, [Haskell
       Wiki](https://wiki.haskell.org/Typeclassopedia))
     - Common Lisp ([Practical Common Lisp](http://gigamonkeys.com/book/))
@@ -58,7 +58,7 @@ subjects at a time is likely the most I can handle.
 - Quantum computing
 - Neuroscience, neurobiology, neuroengineering
   ([braaiiiiinsssss!](https://i.imgur.com/ibsNHc6.png))
-- Art (generative art, painting, sculpting)
+- Art ([generative art](https://www.artnome.com/news/2018/8/8/why-love-generative-art), painting, sculpting)
 - History (what's humanity accomplished so far?)
 - Music
 
