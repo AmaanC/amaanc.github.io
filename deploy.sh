@@ -34,4 +34,4 @@ if [ $# -eq 1 ]
 fi
 
 echo "Commit message: $msg"
-cd public && git add --all && git commit -m "$msg"
+cd public && git add --all && git commit -m "$msg" && git push origin master
