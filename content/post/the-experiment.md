@@ -58,6 +58,12 @@ subjects at a time is likely the most I can handle.
 - Quantum computing
 - Neuroscience, neurobiology, neuroengineering
   ([braaiiiiinsssss!](https://i.imgur.com/ibsNHc6.png))
+  - Karl Deisseroth's optogenetics work
+  - tDCS technology
+  - [Human Brain Project](https://www.humanbrainproject.eu/en/)
+  - https://www.openwater.cc/faq-1
+  - [Master's of Science in Neuroengineering at TUM - Facebook
+    group](https://www.facebook.com/groups/628846877324858/)
 - Art ([generative art](https://www.artnome.com/news/2018/8/8/why-love-generative-art), painting, sculpting)
 - History (what's humanity accomplished so far?)
 - Music
@@ -123,6 +129,7 @@ Also, I need to learn me some Rust for my day-job, a convenient coincidence.
 
 I think the activities that'll help me learn it are:
 
+- Writing code (work, Project Euler, open-source (see next), personal projects)
 - Reading a lot of varied Rust code (Github
   ([Deno](https://github.com/denoland/deno) looks interesting), [CodeReview on
   StackExchange](https://codereview.stackexchange.com/questions/tagged/rust),
