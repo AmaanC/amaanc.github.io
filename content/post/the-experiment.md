@@ -39,6 +39,7 @@ subjects at a time is likely the most I can handle.
 - Programming language theory
   - Lobsters [ML](https://lobste.rs/t/ml) and [formalmethods tags](https://lobste.rs/t/formalmethods)
   - [SIGPLAN research papers](http://www.sigplan.org/Highlights/Papers/)
+  - [Philip Wadler's research](http://homepages.inf.ed.ac.uk/wadler/)
   - Consider learning programming languages like:
     - Rust (The Rust Programming Language)
     - OCaml (Real World OCaml, [Try OCaml Pro online](https://try.ocamlpro.com/))
