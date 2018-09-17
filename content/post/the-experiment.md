@@ -31,6 +31,14 @@ subjects at a time is likely the most I can handle.
 - Marketing
 - Illustration
 - Sales
+- Management / technical lead (project management, people, delegating, etc.)
+  - Mentor people in local meetups, etc.
+  - Watch and learn from large organizations
+    - [RTEMS, since I'd like to continue
+    to be involved](https://blog.whatthedude.com/post/gsoc-final/)
+    - Case-studies
+    - Consulting work?
+    - [Architecture of Open Source Applications](http://aosabook.org/en/index.html)
 - Game theory (I took one course when I was 14 thinking it was about the theory
   of games, and I went halfway through it - it blew my mind)
 - Physics (light, energy, astronomy, quantum mechanics) - likely split it into
@@ -46,7 +54,7 @@ subjects at a time is likely the most I can handle.
     - Haskell (Learn You a Haskell, [Haskell
       Wiki](https://wiki.haskell.org/Typeclassopedia))
     - Common Lisp ([Practical Common Lisp](http://gigamonkeys.com/book/))
-    - Erlang?
+    - Erlang ([Learn You Some Erlang](https://learnyousomeerlang.com/))
   - [PLFA](https://plfa.github.io/) (theory-heavy)
   - [Software Foundations](https://softwarefoundations.cis.upenn.edu/)
     (theory-heavy and difficult)
