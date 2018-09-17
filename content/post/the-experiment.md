@@ -79,8 +79,8 @@ subjects at a time is likely the most I can handle.
 
 This is an entirely non-committal list, of course. My broad aim in studying
 these fields is to maximize my skillset in areas that I think will have the
-largest impact on our future. The overarching goals I have as my motivation for
-these skills are:
+largest impact on our future. The overarching goals / fields I have as my
+motivation for these skills are:
 
 - Programming language theory - imagine how much faster our rate of innovation
   could be if we had languages that made formal verification easier? (NASA
@@ -101,6 +101,13 @@ these skills are:
   salesperson or illustrator. Besides, I believe anything can be interesting if
   you dive deep enough and actually scratch the surface. There's always
   complexity that can be fascinating.
+- Space? I don't know how, but being involved in just about any kind of
+  space-research would be absolutely brilliant. I just don't know if I'd be able
+  to contribute sufficiently (i.e. as an opportunity cost against my other
+  options, for eg.).
+- Computer Science / Math? In my free time, I think I'd like to play with
+  challenges, and these areas are full of interesting little mysteries to tug
+  against.
 
 -------------------------------------------------------------------------------
 
