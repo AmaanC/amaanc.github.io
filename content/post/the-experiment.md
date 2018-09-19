@@ -43,7 +43,17 @@ subjects at a time is likely the most I can handle.
   of games, and I went halfway through it - it blew my mind)
 - Physics (light, energy, astronomy, quantum mechanics) - likely split it into
   its own respective fields when I get around to it
-- Math (topology, category theory, chaos theory)
+- Math
+  - Basics in
+    - Trig
+    - Calculus
+    - Linear algebra and abstract algebra
+    - Information theory
+    - Differential equations
+  - Other considerations
+    - Topology
+    - Category theory (also in PLT after)
+    - Chaos theory
 - Programming language theory
   - Lobsters [ML](https://lobste.rs/t/ml) and [formalmethods tags](https://lobste.rs/t/formalmethods)
   - [SIGPLAN research papers](http://www.sigplan.org/Highlights/Papers/)
