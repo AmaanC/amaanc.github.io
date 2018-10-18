@@ -31,6 +31,7 @@ subjects at a time is likely the most I can handle.
 - Marketing
 - Illustration
 - Sales
+  - https://trailhead.salesforce.com/en/home
 - Management / technical lead (project management, people, delegating, etc.)
   - Mentor people in local meetups, etc.
   - Watch and learn from large organizations
