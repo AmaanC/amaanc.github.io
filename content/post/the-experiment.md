@@ -28,18 +28,27 @@ subjects at a time is likely the most I can handle.
 ## Candidate skills
 
 - Writing (starting with this very post :))
+  - [The Minto Pyramid Principle: Logic in Writing, Thinking, & Problem Solving
+    by Barbara
+    Minto](https://www.goodreads.com/book/show/33206.The_Minto_Pyramid_Principle)
+  - [On
+    Writing by Stephen King](https://www.goodreads.com/book/show/10569.On_Writing)
 - Marketing
 - Illustration
 - Sales
   - https://trailhead.salesforce.com/en/home
 - Management / technical lead (project management, people, delegating, etc.)
   - Mentor people in local meetups, etc.
+  - Mentor young-adults for the Google Code-In competition for RTEMS
   - Watch and learn from large organizations
     - [RTEMS, since I'd like to continue
     to be involved](https://blog.whatthedude.com/post/gsoc-final/)
     - Case-studies
     - Consulting work?
-    - [Architecture of Open Source Applications](http://aosabook.org/en/index.html)
+    - [Architecture of Open Source
+      Applications](http://aosabook.org/en/index.html)
+  - [General Management 101 by Michael
+    Dearing](https://www.harrisonmetal.com/classes/general-management-online)
 - Game theory (I took one course when I was 14 thinking it was about the theory
   of games, and I went halfway through it - it blew my mind)
 - Physics (light, energy, astronomy, quantum mechanics) - likely split it into
