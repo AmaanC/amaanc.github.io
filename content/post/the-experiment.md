@@ -78,6 +78,12 @@ subjects at a time is likely the most I can handle.
   - [PLFA](https://plfa.github.io/) (theory-heavy)
   - [Software Foundations](https://softwarefoundations.cis.upenn.edu/)
     (theory-heavy and difficult)
+  - [Concrete Semantics with Isabelle (a
+    proof-assistant)](http://www.concrete-semantics.org/)
+  - [Category Theory by Steve
+    Awodey](https://www.goodreads.com/book/show/2047855.Category_Theory)
+  - [Semantics with Applications by Nielson and
+    Nielson](https://www.goodreads.com/book/show/1074863.Semantics_With_Applications)
 - Compiler theory (optimizations, transformations, safety)
   - Dragon book?
   - Polytope model optimizations (studying this was lots of fun, I'd like more)
