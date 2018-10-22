@@ -54,6 +54,7 @@ subjects at a time is likely the most I can handle.
 - Physics (light, energy, astronomy, quantum mechanics) - likely split it into
   its own respective fields when I get around to it
 - Math
+  - [MetaMath (also PLT)](http://us.metamath.org/#book)
   - Basics in
     - Trig
     - Calculus
