@@ -81,6 +81,9 @@ subjects at a time is likely the most I can handle.
 - Compiler theory (optimizations, transformations, safety)
   - Dragon book?
   - Polytope model optimizations (studying this was lots of fun, I'd like more)
+- Machine Learning
+  - Specifically, how hardware can be improved to allow for more efficient
+    processing, the way GPUs and even Google's TPUs (for TensorFlow) exist.
 - Embedded systems and electronics
 - Cryptography (Dan Boneh's textbook, https://cryptoeconomics.study/, https://cryptopals.com/)
 - Distributed systems and server-management
