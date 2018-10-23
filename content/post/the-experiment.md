@@ -35,6 +35,9 @@ subjects at a time is likely the most I can handle.
     Writing by Stephen King](https://www.goodreads.com/book/show/10569.On_Writing)
 - Marketing
 - Illustration
+- Finance
+  - [Book
+    recommendations](https://twitter.com/Arik_Sternberg/status/1046436308778856453)
 - Sales
   - https://trailhead.salesforce.com/en/home
 - Management / technical lead (project management, people, delegating, etc.)
@@ -95,6 +98,11 @@ subjects at a time is likely the most I can handle.
 - Embedded systems and electronics
 - Cryptography (Dan Boneh's textbook, https://cryptoeconomics.study/, https://cryptopals.com/)
 - Distributed systems and server-management
+  - [Programming Models for Distributed
+    Computing](http://heather.miller.am/teaching/cs7680/index.html#schedule)
+  - [Languages and Abstractions for Distributed
+    Programming](http://composition.al/CMPS290S-2018-09/readings.html) (immense
+    focus on consistency models)
 - Quantum computing
 - Neuroscience, neurobiology, neuroengineering
   ([braaiiiiinsssss!](https://i.imgur.com/ibsNHc6.png))
