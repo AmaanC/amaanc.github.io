@@ -53,6 +53,7 @@ subjects at a time is likely the most I can handle.
   of games, and I went halfway through it - it blew my mind)
 - Physics (light, energy, astronomy, quantum mechanics) - likely split it into
   its own respective fields when I get around to it
+  - [OpenAstronomy](https://openastronomy.org/members/)
 - Math
   - [MetaMath (also PLT)](http://us.metamath.org/#book)
   - Basics in
