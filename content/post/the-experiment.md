@@ -27,12 +27,17 @@ subjects at a time is likely the most I can handle.
 
 ## Candidate skills
 
-- Writing (starting with this very post :))
+- Writing (starting with this very post :)); I'm aiming to be a good
+  communicator, not a thesaurus. I'd like to paint clearer imagery of the topics
+  I'm interested in, which are often technical in nature, making the use of
+  metaphors and (accurate) simplification important.
   - [The Minto Pyramid Principle: Logic in Writing, Thinking, & Problem Solving
     by Barbara
     Minto](https://www.goodreads.com/book/show/33206.The_Minto_Pyramid_Principle)
   - [On
-    Writing by Stephen King](https://www.goodreads.com/book/show/10569.On_Writing)
+    Writing by Stephen
+    King](https://www.goodreads.com/book/show/10569.On_Writing)
+  - Study the books I'm reading more carefully
 - Marketing
 - Illustration
 - Finance
@@ -59,6 +64,8 @@ subjects at a time is likely the most I can handle.
   - [OpenAstronomy](https://openastronomy.org/members/)
 - Math
   - [MetaMath (also PLT)](http://us.metamath.org/#book)
+  - [BetterExplained](https://betterexplained.com/)
+  - [3blue1brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
   - Basics in
     - Trig
     - Calculus
@@ -72,6 +79,8 @@ subjects at a time is likely the most I can handle.
 - Programming language theory
   - Lobsters [ML](https://lobste.rs/t/ml) and [formalmethods tags](https://lobste.rs/t/formalmethods)
   - [SIGPLAN research papers](http://www.sigplan.org/Highlights/Papers/)
+  - [Continuations group reading
+    materials](https://github.com/rain-1/continuations-study-group/wiki/Reading-List)
   - [Philip Wadler's research](http://homepages.inf.ed.ac.uk/wadler/)
   - Consider learning programming languages like:
     - Rust (The Rust Programming Language)
@@ -80,9 +89,13 @@ subjects at a time is likely the most I can handle.
       Wiki](https://wiki.haskell.org/Typeclassopedia))
     - Common Lisp ([Practical Common Lisp](http://gigamonkeys.com/book/))
     - Erlang ([Learn You Some Erlang](https://learnyousomeerlang.com/))
-  - [PLFA](https://plfa.github.io/) (theory-heavy)
-  - [Software Foundations](https://softwarefoundations.cis.upenn.edu/)
+  - [Programming Language Foundations in Agda by Philip
+    Wadler](https://plfa.github.io/) (theory-heavy)
+  - [Software Foundations by Benjamin Pierce, et
+    al.](https://softwarefoundations.cis.upenn.edu/)
     (theory-heavy and difficult)
+  - [Category Theory for Programmers by Bartoz
+    Milewski](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/)
   - [Concrete Semantics with Isabelle (a
     proof-assistant)](http://www.concrete-semantics.org/)
   - [Category Theory by Steve
