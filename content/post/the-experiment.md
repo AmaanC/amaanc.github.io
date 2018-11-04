@@ -109,6 +109,7 @@ subjects at a time is likely the most I can handle.
   - Specifically, how hardware can be improved to allow for more efficient
     processing, the way GPUs and even Google's TPUs (for TensorFlow) exist.
 - Embedded systems and electronics
+  - [Hackaday.io](https://hackaday.io/)
 - Cryptography (Dan Boneh's textbook, https://cryptoeconomics.study/, https://cryptopals.com/)
 - Distributed systems and server-management
   - [Programming Models for Distributed
