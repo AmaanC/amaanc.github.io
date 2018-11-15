@@ -62,7 +62,11 @@ subjects at a time is likely the most I can handle.
 - Physics (light, energy, astronomy, quantum mechanics) - likely split it into
   its own respective fields when I get around to it
   - [OpenAstronomy](https://openastronomy.org/members/)
+  - [CERN](https://home.cern)
+  - [Stanford's lectures - General Theory of Relativity](https://www.youtube.com/watch?v=hbmf0bB38h0)
+  - [Feynman's lectures - QED](https://www.youtube.com/watch?v=eLQ2atfqk2c&list=PL8590A6E18255B3F4)
 - Math
+  - [Model theory](https://en.wikipedia.org/wiki/Model_theory)
   - [MetaMath (also PLT)](http://us.metamath.org/#book)
   - [BetterExplained](https://betterexplained.com/)
   - [3blue1brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
@@ -118,6 +122,8 @@ subjects at a time is likely the most I can handle.
     Programming](http://composition.al/CMPS290S-2018-09/readings.html) (immense
     focus on consistency models)
 - Quantum computing
+  - [Cirq](https://github.com/quantumlib/Cirq)
+  - Shor's algorithm, obviously
 - Neuroscience, neurobiology, neuroengineering
   ([braaiiiiinsssss!](https://i.imgur.com/ibsNHc6.png))
   - Karl Deisseroth's optogenetics work
