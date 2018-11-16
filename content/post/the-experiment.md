@@ -134,6 +134,8 @@ subjects at a time is likely the most I can handle.
     group](https://www.facebook.com/groups/628846877324858/)
 - Art ([generative art](https://www.artnome.com/news/2018/8/8/why-love-generative-art), painting, sculpting)
 - History (what's humanity accomplished so far?)
+  - [Humans: A Course of
+    Study](http://www.macosonline.org/macos-online-archives/)
 - Music
 
 This is an entirely non-committal list, of course. My broad aim in studying
