@@ -25,6 +25,13 @@ uproot my life and follow a rigid schedule (I'll continue to have a personal
 life, work part-time, work on open-source, etc.) I think managing 1 or 2
 subjects at a time is likely the most I can handle.
 
+# Generic resources to check before every subject
+
+- [LessWrong's list of the best textbooks on many
+  subjects](https://www.lesswrong.com/posts/xg3hXCYQPJkwHyik2/the-best-textbooks-on-every-subject)
+- Wikipedia templates on related topics
+- Online courses (Class Central)
+
 ## Candidate skills
 
 - Writing (starting with this very post :)); I'm aiming to be a good
@@ -46,6 +53,7 @@ subjects at a time is likely the most I can handle.
 - Sales
   - https://trailhead.salesforce.com/en/home
 - Management / technical lead (project management, people, delegating, etc.)
+  - [Case studies on what Google initiatives have failed](https://gcemetery.co/)
   - Mentor people in local meetups, etc.
   - Mentor young-adults for the Google Code-In competition for RTEMS
   - Watch and learn from large organizations
@@ -59,8 +67,11 @@ subjects at a time is likely the most I can handle.
     Dearing](https://www.harrisonmetal.com/classes/general-management-online)
 - Game theory (I took one course when I was 14 thinking it was about the theory
   of games, and I went halfway through it - it blew my mind)
+  - [Price equation](https://en.wikipedia.org/wiki/Price_equation)
 - Physics (light, energy, astronomy, quantum mechanics) - likely split it into
   its own respective fields when I get around to it
+  - [Beyond the Standard
+    Model](https://en.wikipedia.org/wiki/Physics_beyond_the_Standard_Model)
   - [OpenAstronomy](https://openastronomy.org/members/)
   - [CERN](https://home.cern)
   - [Stanford's lectures - General Theory of Relativity](https://www.youtube.com/watch?v=hbmf0bB38h0)
@@ -69,7 +80,9 @@ subjects at a time is likely the most I can handle.
   - [Model theory](https://en.wikipedia.org/wiki/Model_theory)
   - [MetaMath (also PLT)](http://us.metamath.org/#book)
   - [BetterExplained](https://betterexplained.com/)
+  - [Paul's online math notes](http://tutorial.math.lamar.edu/)
   - [3blue1brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
+  - [Graphical Linear Algebra](https://graphicallinearalgebra.net/)
   - Basics in
     - Trig
     - Calculus
@@ -114,13 +127,21 @@ subjects at a time is likely the most I can handle.
     processing, the way GPUs and even Google's TPUs (for TensorFlow) exist.
 - Embedded systems and electronics
   - [Hackaday.io](https://hackaday.io/)
-- Cryptography (Dan Boneh's textbook, https://cryptoeconomics.study/, https://cryptopals.com/)
-- Distributed systems and server-management
+  - MQTT
+  - "Throwie" tech (self-sustained through renewable energy)
+- Cryptography (Dan Boneh's textbook, https://cryptoeconomics.study/,
+  https://cryptopals.com/)
+  - [A guide to post-quantum
+    cryptography](https://blog.trailofbits.com/2018/10/22/a-guide-to-post-quantum-cryptography/)
+- Distributed systems and parallel processing
   - [Programming Models for Distributed
     Computing](http://heather.miller.am/teaching/cs7680/index.html#schedule)
   - [Languages and Abstractions for Distributed
     Programming](http://composition.al/CMPS290S-2018-09/readings.html) (immense
     focus on consistency models)
+  - [General-purpose computing on
+    GPUs](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units)
+  - [CUDA](https://en.wikipedia.org/wiki/CUDA)
 - Quantum computing
   - [Cirq](https://github.com/quantumlib/Cirq)
   - Shor's algorithm, obviously
@@ -128,6 +149,9 @@ subjects at a time is likely the most I can handle.
   ([braaiiiiinsssss!](https://i.imgur.com/ibsNHc6.png))
   - Karl Deisseroth's optogenetics work
   - tDCS technology
+  - [Mental representation](https://en.wikipedia.org/wiki/Mental_representation)
+  - [Cognitive Science: An Introduction to the Science of the
+    Mind by José Luis Bermúdez](https://www.goodreads.com/book/show/7251752-cognitive-science)
   - [Human Brain Project](https://www.humanbrainproject.eu/en/)
   - https://www.openwater.cc/faq-1
   - [Master's of Science in Neuroengineering at TUM - Facebook
@@ -136,7 +160,17 @@ subjects at a time is likely the most I can handle.
 - History (what's humanity accomplished so far?)
   - [Humans: A Course of
     Study](http://www.macosonline.org/macos-online-archives/)
+  - [Extra Credits' "Extra History"
+    playlist](https://www.youtube.com/playlist?list=PLhyKYa0YJ_5BQmw4cp7mmwtyEc4tBMUhX)
+  - [Age of Enlightenment](https://en.wikipedia.org/wiki/Age_of_Enlightenment)
+    (and other periods of human history)
+  - History of technology, math, science, art
+- Philosophy
+  - [History of philosophy](https://www.denizcemonduygu.com/philo/browse/)
+  - [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/)
 - Music
+  - [140's
+    OST](https://www.youtube.com/watch?v=HAh0OLG1NAE&index=3&list=PLSwiiZF6c9CYrvMG-uNkkqzb6J3_-DhBP)
 
 This is an entirely non-committal list, of course. My broad aim in studying
 these fields is to maximize my skillset in areas that I think will have the
