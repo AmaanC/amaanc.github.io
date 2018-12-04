@@ -29,6 +29,7 @@ subjects at a time is likely the most I can handle.
 
 - [LessWrong's list of the best textbooks on many
   subjects](https://www.lesswrong.com/posts/xg3hXCYQPJkwHyik2/the-best-textbooks-on-every-subject)
+- [Hacker News' list of textbooks](https://news.ycombinator.com/item?id=18104814)
 - Wikipedia templates on related topics
 - Online courses (Class Central)
 
