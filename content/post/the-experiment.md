@@ -31,7 +31,16 @@ subjects at a time is likely the most I can handle.
   subjects](https://www.lesswrong.com/posts/xg3hXCYQPJkwHyik2/the-best-textbooks-on-every-subject)
 - [Hacker News' list of textbooks](https://news.ycombinator.com/item?id=18104814)
 - Wikipedia templates on related topics
-- Online courses (Class Central)
+- [Online courses (Class Central)](https://www.class-central.com)
+- Reddit
+- Wikipedia / topic-specific wikis
+- [Functional CS curriculum](https://functionalcs.github.io/curriculum/)
+- Open Source Society's [CS resources](https://github.com/ossu/computer-science)
+  and [Bioinformatics
+  resources](https://github.com/ossu/bioinformatics#curriculum)
+- StackExchange tag wikis
+- IRC
+- YouTube
 
 ## Candidate skills
 
@@ -78,7 +87,10 @@ subjects at a time is likely the most I can handle.
   - [Stanford's lectures - General Theory of Relativity](https://www.youtube.com/watch?v=hbmf0bB38h0)
   - [Feynman's lectures - QED](https://www.youtube.com/watch?v=eLQ2atfqk2c&list=PL8590A6E18255B3F4)
 - Math
+  - [IRC Math community's wiki of books for
+    self-learners](http://freenode-math.wikia.com/wiki/Book_List)
   - [Model theory](https://en.wikipedia.org/wiki/Model_theory)
+  - [ImmersiveMath](http://immersivemath.com/ila/learnmore.html)
   - [MetaMath (also PLT)](http://us.metamath.org/#book)
   - [BetterExplained](https://betterexplained.com/)
   - [Paul's online math notes](http://tutorial.math.lamar.edu/)
@@ -95,6 +107,8 @@ subjects at a time is likely the most I can handle.
     - Category theory (also in PLT after)
     - Chaos theory
 - Programming language theory
+  - #proglangdesign
+  - Discord
   - Lobsters [ML](https://lobste.rs/t/ml) and [formalmethods tags](https://lobste.rs/t/formalmethods)
   - [SIGPLAN research papers](http://www.sigplan.org/Highlights/Papers/)
   - [Continuations group reading
@@ -144,10 +158,20 @@ subjects at a time is likely the most I can handle.
     GPUs](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units)
   - [CUDA](https://en.wikipedia.org/wiki/CUDA)
 - Quantum computing
+  - [Quantum Computing lectures at
+    CMU](https://www.youtube.com/playlist?list=PLm3J0oaFux3YL5qLskC6xQ24JpMwOAeJz)
   - [Cirq](https://github.com/quantumlib/Cirq)
+  - [Quantum computing for the very curious (using spaced
+    repetition)](https://quantum.country/qcvc)
+  - [Introduction to quantum computing for
+    non-physicists](https://arxiv.org/abs/quant-ph/9809016)
   - Shor's algorithm, obviously
+  - [CMU's course on Quantum
+    Computation](http://www.cs.cmu.edu/~odonnell/quantum18/) with [lecture
+    videos](https://www.youtube.com/playlist?list=PLm3J0oaFux3YL5qLskC6xQ24JpMwOAeJz)
 - Neuroscience, neurobiology, neuroengineering
   ([braaiiiiinsssss!](https://i.imgur.com/ibsNHc6.png))
+  - [Rosalind - Bioinformatics test problems like Project Euler](http://rosalind.info/problems/locations/)
   - Karl Deisseroth's optogenetics work
   - tDCS technology
   - [Mental representation](https://en.wikipedia.org/wiki/Mental_representation)
@@ -172,6 +196,8 @@ subjects at a time is likely the most I can handle.
 - Music
   - [140's
     OST](https://www.youtube.com/watch?v=HAh0OLG1NAE&index=3&list=PLSwiiZF6c9CYrvMG-uNkkqzb6J3_-DhBP)
+
+-------------------------------------------------------------------------------
 
 This is an entirely non-committal list, of course. My broad aim in studying
 these fields is to maximize my skillset in areas that I think will have the
