@@ -23,7 +23,7 @@ echo "Removing existing files"
 rm -rf public/*
 
 echo "Generating site"
-hugo
+hugo || exit 1;
 
 echo "blog.whatthedude.com" > public/CNAME
 
