@@ -142,6 +142,7 @@ subjects at a time is likely the most I can handle.
     processing, the way GPUs and even Google's TPUs (for TensorFlow) exist.
 - Embedded systems and electronics
   - [Hackaday.io](https://hackaday.io/)
+  - [TU Graz's embedded security course](https://teaching.iaik.tugraz.at/start)
   - MQTT
   - "Throwie" tech (self-sustained through renewable energy)
 - Cryptography (Dan Boneh's textbook, https://cryptoeconomics.study/,
