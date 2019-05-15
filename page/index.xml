@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on What The Blog?</title>
+    <link>https://blog.whatthedude.com/page/</link>
+    <description>Recent content in Pages on What The Blog?</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Apr 2018 14:35:16 +0530</lastBuildDate>
+    
+	<atom:link href="https://blog.whatthedude.com/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://blog.whatthedude.com/about/</link>
+      <pubDate>Wed, 25 Apr 2018 14:35:16 +0530</pubDate>
+      
+      <guid>https://blog.whatthedude.com/about/</guid>
+      <description>Hi! I&amp;rsquo;m Amaan, and this is my ranty little blog. I like to rant and occasionally string together a coherent sentence about technologies that interest me.
+In the past I&amp;rsquo;ve been interested in these things to varying degrees:
+ Reverse engineering x86 assembly Binary exploitation WebAssembly Common Lisp Cryptography Emacs! (&amp;lt;3) Node.js Python  I love talking to fellow nerds, so hit me up if you&amp;rsquo;d like to talk about anything!</description>
+    </item>
+    
+  </channel>
+</rss>

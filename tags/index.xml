@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on What The Blog?</title>
+    <link>https://blog.whatthedude.com/tags/</link>
+    <description>Recent content in Tags on What The Blog?</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Aug 2018 14:22:32 +0530</lastBuildDate>
+    
+	<atom:link href="https://blog.whatthedude.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>experiment</title>
+      <link>https://blog.whatthedude.com/tags/experiment/</link>
+      <pubDate>Mon, 27 Aug 2018 14:22:32 +0530</pubDate>
+      
+      <guid>https://blog.whatthedude.com/tags/experiment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gsoc</title>
+      <link>https://blog.whatthedude.com/tags/gsoc/</link>
+      <pubDate>Mon, 13 Aug 2018 14:22:32 +0530</pubDate>
+      
+      <guid>https://blog.whatthedude.com/tags/gsoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rtems</title>
+      <link>https://blog.whatthedude.com/tags/rtems/</link>
+      <pubDate>Mon, 13 Aug 2018 14:22:32 +0530</pubDate>
+      
+      <guid>https://blog.whatthedude.com/tags/rtems/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

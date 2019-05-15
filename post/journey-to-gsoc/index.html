@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.55.3" />
+
+
+<title>The Journey to GSoC 2018 - just the beginning - What The Blog?</title>
+<meta property="og:title" content="The Journey to GSoC 2018 - just the beginning - What The Blog?">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://blog.whatthedude.com/css/main.css" media="all">
+<link rel="stylesheet" href="https://blog.whatthedude.com/css/fonts.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://blog.whatthedude.com/" class="nav-logo">
+    <img src="https://blog.whatthedude.com/images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/categories">Categories</a></li>
+    
+    <li><a href="/tags">Tags</a></li>
+    
+    <li><a href="/about/">About</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+  <article class="article">
+    <h1 class="article-title">The Journey to GSoC 2018 - just the beginning</h1>
+    
+    <span class="article-date">2018-04-24</span>
+    
+
+    <div class="article-content">
+      
+
+<p>Here I&rsquo;ll document some of the preperatory tasks I undertook as part of my
+proposal to <a href="https://www.rtems.org/">RTEMS</a> (AN RTOS THAT&rsquo;S BEEN TO
+<b><em>SPACE</em></b>! <a href="https://www.youtube.com/watch?v=BVn1oQL9sWg">SPAAAAAAAAAACE!</a>).</p>
+
+<h1 id="the-hunt">The Hunt</h1>
+
+<p>To start at the beginning, I&rsquo;m going to have to just say that finding an
+organization that piques your interest <em>and</em> needs a project that hits just the
+sweet-spot in &ldquo;I have most of the skills to do this, but I&rsquo;ll still need to
+learn and grow a lot to bring it to fruition&rdquo; is <em>hard</em>. I oscillated between
+organizations and potential projects for a month easily, until I finally
+stumbled upon RTEMS, at which point I yelled &ldquo;I&rsquo;m going to Mars!&rdquo; repeatedly
+while jumping around the house. (Contributing to anything that&rsquo;s even remotely
+related to space-research has been a dream for years, and the fact that RTEMS
+has such an incredible and approachable community has been incredibly exciting
+to me! :D)</p>
+
+<p>Despite the excitement, RTEMS intimidated me majorly - their build system (using
+Autotools) is more complicated than any I&rsquo;ve worked with before, and it all felt
+like magic that <em>I</em> definitely wasn&rsquo;t cut out
+for:</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Been dealing with autotools a lot lately, and and I just read CONFIG_SHELL as CONFIG_HELL - I think that summarizes my sentiments on the tooling.</p>&mdash; Amaan Cheval (@AmaanC) <a href="https://twitter.com/AmaanC/status/981246781102071808?ref_src=twsrc%5Etfw">April 3, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<h1 id="rise-from-the-ashes">Rise from the ashes</h1>
+
+<p>I decided eventually that I&rsquo;d rather suppress my fear of looking stupid and just
+use the community&rsquo;s knowledge whenever I needed it, by asking questions and
+learning instead of struggling in vain.</p>
+
+<p><a href="https://lists.rtems.org/pipermail/devel/2018-March/020370.html">This resulted in very productive discussion on the mailing
+list</a>, and even
+a <a href="https://git.rtems.org/rtems/log/?qt=author&amp;q=Amaan">few upstreamed patches to the core repository (the first 4 commits
+there)</a>, which let me
+finally gain some momentum.</p>
+
+<p>Given that I was still working part-time (<a href="https://github.com/copy/v86">on this
+holy-shit-how-can-you-do-that project</a>)
+and attending university, I decided I&rsquo;d allot about 1 day per week to furthering
+my familiarity with RTEMS and figure out which specific project I&rsquo;d like to work
+on.</p>
+
+<p>This worked out surprisingly well! I started working towards my proposed phase 1
+target of getting a new stub port for RTEMS (i.e. one that implements empty
+function definitions as much as possible, just to get it linking with the core
+of RTEMS, and therefore eventually all of the testsuite).</p>
+
+<p>In the process of doing this, I came across a teeny tiny bug in
+<span style="color:red">👏 G 👏 C 👏 C 👏</span>. That&rsquo;s right, I had the
+opportunity to submit a teeny patch to GCC for the <code>x86_64-rtems-gcc</code> target to
+allow it to include the standard RTEMS tools flags like <code>-qnolinkcmds</code>,
+<code>-qrtems</code>, etc. through the GCC <a href="https://gcc.gnu.org/onlinedocs/gcc/Spec-Files.html">spec
+syntax</a>.</p>
+
+<p><a href="https://gcc.gnu.org/git/?p=gcc.git;a=commitdiff;h=602fa1e9d3ea5e87d4d6e17e3e91fc2647e42da3">The patch that will let me die happily ever
+after.</a></p>
+
+<p>After that, I continued working on the stub port and got <em>some</em> RTEMS tests
+linking to my stub happily, but there&rsquo;s still <em>tons</em> of work to be done. See
+<a href="/post/rtems-x86-64-port-intro/">my post detailing my GSoC 2018 proposal for more information on what&rsquo;s coming
+next.</a></p>
+
+    </div>
+ 
+    <ul class="article-taxonomy">
+                  
+      <hr>
+      <li>
+        <i class="fa fa-category"></i><a href="/categories/tech">tech</a>
+      </li>
+      
+    
+      
+      <li>
+        <i class="fa fa-tags"></i><a href="/tags/gsoc">gsoc</a><a href="/tags/rtems">rtems</a>
+      </li>
+      
+  </article>
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://blog.whatthedude.com/index.xml" type="application/rss+xml" target="_blank"><i class="fa fa-rss"></i> RSS feed</a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+  <script src="https://blog.whatthedude.com/js/external-newtab.js"></script>
+  </body>
+</html>
+
