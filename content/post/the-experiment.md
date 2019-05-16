@@ -149,12 +149,13 @@ subjects at a time is likely the most I can handle.
   https://cryptopals.com/)
   - [A guide to post-quantum
     cryptography](https://blog.trailofbits.com/2018/10/22/a-guide-to-post-quantum-cryptography/)
-- Distributed systems and parallel processing
+- Distributed systems, concurrent programming, and parallel processing
   - [Programming Models for Distributed
     Computing](http://heather.miller.am/teaching/cs7680/index.html#schedule)
   - [Languages and Abstractions for Distributed
     Programming](http://composition.al/CMPS290S-2018-09/readings.html) (immense
     focus on consistency models)
+  - [Crossbeam-rs' wiki](https://github.com/crossbeam-rs/rfcs/wiki)
   - [General-purpose computing on
     GPUs](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units)
   - [CUDA](https://en.wikipedia.org/wiki/CUDA)
