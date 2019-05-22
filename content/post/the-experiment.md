@@ -183,7 +183,13 @@ subjects at a time is likely the most I can handle.
   - https://www.openwater.cc/faq-1
   - [Master's of Science in Neuroengineering at TUM - Facebook
     group](https://www.facebook.com/groups/628846877324858/)
-- Art ([generative art](https://www.artnome.com/news/2018/8/8/why-love-generative-art), painting, sculpting)
+- Art ([generative
+  art](https://www.artnome.com/news/2018/8/8/why-love-generative-art), painting,
+  sculpting)
+  - OpenFrameworks community?
+  - Shadertoy
+  - #openframeworks on Instagram
+  - Glitch art
 - History (what's humanity accomplished so far?)
   - [Humans: A Course of
     Study](http://www.macosonline.org/macos-online-archives/)
@@ -276,7 +282,9 @@ I think the activities that'll help me learn it are:
   answering questions on StackOverflow)
 - Reading [The Rust Programming Language](https://doc.rust-lang.org/book/second-edition/)
 - [/r/rust](https://www.reddit.com/r/rust/) for misc. discovery
-- [Conference talks on YouTube](https://www.youtube.com/channel/UCaYhcUwRBNscFNUKTjgPFiA)
+- [Conference talks on
+  YouTube](https://www.youtube.com/channel/UCaYhcUwRBNscFNUKTjgPFiA)
+- [Rust Embedded](https://docs.rust-embedded.org/)
 
 -------------------------------------------------------------------------------
 
