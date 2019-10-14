@@ -106,6 +106,8 @@ subjects at a time is likely the most I can handle.
     - Topology
     - Category theory (also in PLT after)
     - Chaos theory
+- Linguistics
+  - [Sumerian / cuneiform](https://www.youtube.com/watch?v=rrsIW0akb6o)
 - Programming language theory
   - #proglangdesign
   - Discord
@@ -131,7 +133,7 @@ subjects at a time is likely the most I can handle.
   - [Concrete Semantics with Isabelle (a
     proof-assistant)](http://www.concrete-semantics.org/)
   - [Category Theory by Steve
-    Awodey](https://www.goodreads.com/book/show/2047855.Category_Theory)
+    Awodey](https://www.goodreads.com/book/show/2047858.Category_Theory)
   - [Semantics with Applications by Nielson and
     Nielson](https://www.goodreads.com/book/show/1074863.Semantics_With_Applications)
 - Compiler theory (optimizations, transformations, safety)
@@ -145,6 +147,12 @@ subjects at a time is likely the most I can handle.
   - [TU Graz's embedded security course](https://teaching.iaik.tugraz.at/start)
   - MQTT
   - "Throwie" tech (self-sustained through renewable energy)
+  - Wearable tech
+  - Augmented reality
+  - [Make: Wearable Electronics](https://www.goodreads.com/en/book/show/22946297)
+- Machine Learning / AI
+  - I've already done a few courses, but:
+  - https://revbayes.github.io/
 - Cryptography (Dan Boneh's textbook, https://cryptoeconomics.study/,
   https://cryptopals.com/)
   - [A guide to post-quantum
@@ -171,7 +179,7 @@ subjects at a time is likely the most I can handle.
   - [CMU's course on Quantum
     Computation](http://www.cs.cmu.edu/~odonnell/quantum18/) with [lecture
     videos](https://www.youtube.com/playlist?list=PLm3J0oaFux3YL5qLskC6xQ24JpMwOAeJz)
-- Neuroscience, neurobiology, neuroengineering
+- Biology (for Neuroscience, neurobiology, neuroengineering)
   ([braaiiiiinsssss!](https://i.imgur.com/ibsNHc6.png))
   - [Rosalind - Bioinformatics test problems like Project Euler](http://rosalind.info/problems/locations/)
   - Karl Deisseroth's optogenetics work
@@ -186,10 +194,14 @@ subjects at a time is likely the most I can handle.
 - Art ([generative
   art](https://www.artnome.com/news/2018/8/8/why-love-generative-art), painting,
   sculpting)
+  - Physical? Painting, sketching, etc.
   - OpenFrameworks community?
-  - Shadertoy
   - #openframeworks on Instagram
+  - Shadertoy
+  - [Inigo Quilez's amazing blog](http://www.iquilezles.org/index.html)
+  - [pywonderland](https://github.com/neozhaoliang/pywonderland)
   - Glitch art
+  - Music videos?
 - History (what's humanity accomplished so far?)
   - [Humans: A Course of
     Study](http://www.macosonline.org/macos-online-archives/)
@@ -197,6 +209,7 @@ subjects at a time is likely the most I can handle.
     playlist](https://www.youtube.com/playlist?list=PLhyKYa0YJ_5BQmw4cp7mmwtyEc4tBMUhX)
   - [Age of Enlightenment](https://en.wikipedia.org/wiki/Age_of_Enlightenment)
     (and other periods of human history)
+  - [History of the world](https://en.wikipedia.org/wiki/History_of_the_world)
   - History of technology, math, science, art
 - Philosophy
   - [History of philosophy](https://www.denizcemonduygu.com/philo/browse/)
@@ -204,6 +217,10 @@ subjects at a time is likely the most I can handle.
 - Music
   - [140's
     OST](https://www.youtube.com/watch?v=HAh0OLG1NAE&index=3&list=PLSwiiZF6c9CYrvMG-uNkkqzb6J3_-DhBP)
+  - https://www.musictheory.net/
+  - [3b1b on music and measure
+  theory](https://www.youtube.com/watch?v=cyW5z-M2yzw)
+  - Keyboard
 
 -------------------------------------------------------------------------------
 
