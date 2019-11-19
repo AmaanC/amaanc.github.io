@@ -85,7 +85,10 @@ subjects at a time is likely the most I can handle.
   - [OpenAstronomy](https://openastronomy.org/members/)
   - [CERN](https://home.cern)
   - [Stanford's lectures - General Theory of Relativity](https://www.youtube.com/watch?v=hbmf0bB38h0)
-  - [Feynman's lectures - QED](https://www.youtube.com/watch?v=eLQ2atfqk2c&list=PL8590A6E18255B3F4)
+  - [Feynman's lectures -
+    QED](https://www.youtube.com/watch?v=eLQ2atfqk2c&list=PL8590A6E18255B3F4)
+  - [MIT 8.04 Quantum Physics
+    I](https://www.youtube.com/watch?v=jANZxzetPaQ&list=PLUl4u3cNGP60cspQn3N9dYRPiyVWDd80G)
 - Math
   - [IRC Math community's wiki of books for
     self-learners](http://freenode-math.wikia.com/wiki/Book_List)
@@ -123,6 +126,9 @@ subjects at a time is likely the most I can handle.
       Wiki](https://wiki.haskell.org/Typeclassopedia))
     - Common Lisp ([Practical Common Lisp](http://gigamonkeys.com/book/))
     - Erlang ([Learn You Some Erlang](https://learnyousomeerlang.com/))
+    - [Pony](https://tutorial.ponylang.io/)
+  - Coq, proof-assistants
+  - [Lean](https://xenaproject.wordpress.com/what-does-lean-already-know/)
   - [Programming Language Foundations in Agda by Philip
     Wadler](https://plfa.github.io/) (theory-heavy)
   - [Software Foundations by Benjamin Pierce, et
@@ -198,6 +204,10 @@ subjects at a time is likely the most I can handle.
   - OpenFrameworks community?
   - #openframeworks on Instagram
   - Shadertoy
+  - [The Art of Code -
+    YouTube](https://www.youtube.com/channel/UCcAlTqd9zID6aNX3TzwxJXg)
+  - [The Coding Train -
+    YouTube](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw)
   - [Inigo Quilez's amazing blog](http://www.iquilezles.org/index.html)
   - [pywonderland](https://github.com/neozhaoliang/pywonderland)
   - Glitch art
