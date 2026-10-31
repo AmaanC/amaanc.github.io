@@ -2,58 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://amaanc.github.io/categories/</loc>
     <lastmod>2018-08-27T14:22:32+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/tags/experiment/</loc>
+    <loc>https://amaanc.github.io/tags/experiment/</loc>
     <lastmod>2018-08-27T14:22:32+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/categories/personal/</loc>
+    <loc>https://amaanc.github.io/categories/personal/</loc>
     <lastmod>2018-08-27T14:22:32+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/post/</loc>
+    <loc>https://amaanc.github.io/tags/</loc>
     <lastmod>2018-08-27T14:22:32+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://amaanc.github.io/post/experiment/</loc>
     <lastmod>2018-08-27T14:22:32+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/post/experiment/</loc>
+    <loc>https://amaanc.github.io/</loc>
     <lastmod>2018-08-27T14:22:32+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
-    <lastmod>2018-08-27T14:22:32+05:30</lastmod>
-  </url><url>
-    <loc>https://example.org/tags/gsoc/</loc>
+    <loc>https://amaanc.github.io/tags/gsoc/</loc>
     <lastmod>2018-08-13T14:22:32+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/post/gsoc-final/</loc>
+    <loc>https://amaanc.github.io/post/gsoc-final/</loc>
     <lastmod>2018-08-13T14:22:32+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/tags/rtems/</loc>
+    <loc>https://amaanc.github.io/tags/rtems/</loc>
     <lastmod>2018-08-13T14:22:32+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/categories/tech/</loc>
+    <loc>https://amaanc.github.io/categories/tech/</loc>
     <lastmod>2018-08-13T14:22:32+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/post/gsoc-phase-2-status/</loc>
+    <loc>https://amaanc.github.io/post/gsoc-phase-2-status/</loc>
     <lastmod>2018-07-16T14:22:32+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/post/gnu-efi-kernel-so/</loc>
+    <loc>https://amaanc.github.io/post/gnu-efi-kernel-so/</loc>
     <lastmod>2018-06-02T12:24:39+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/post/uefi-app-options/</loc>
+    <loc>https://amaanc.github.io/post/uefi-app-options/</loc>
     <lastmod>2018-05-18T14:54:32+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/post/rtems-x86-64-port-intro/</loc>
+    <loc>https://amaanc.github.io/post/rtems-x86-64-port-intro/</loc>
     <lastmod>2018-04-25T20:08:56+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/about/</loc>
+    <loc>https://amaanc.github.io/about/</loc>
     <lastmod>2018-04-25T14:35:16+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/page/</loc>
-    <lastmod>2018-04-25T14:35:16+05:30</lastmod>
-  </url><url>
-    <loc>https://example.org/post/journey-to-gsoc/</loc>
+    <loc>https://amaanc.github.io/post/journey-to-gsoc/</loc>
     <lastmod>2018-04-24T00:00:00+00:00</lastmod>
   </url>
 </urlset>
