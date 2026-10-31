@@ -1,26 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Pages on What The Blog?</title>
-    <link>https://blog.whatthedude.com/page/</link>
-    <description>Recent content in Pages on What The Blog?</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 25 Apr 2018 14:35:16 +0530</lastBuildDate>
-    
-	<atom:link href="https://blog.whatthedude.com/page/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>About</title>
-      <link>https://blog.whatthedude.com/about/</link>
-      <pubDate>Wed, 25 Apr 2018 14:35:16 +0530</pubDate>
-      
-      <guid>https://blog.whatthedude.com/about/</guid>
-      <description>Hi! I&amp;rsquo;m Amaan, and this is my ranty little blog. I like to rant and occasionally string together a coherent sentence about technologies that interest me.
-In the past I&amp;rsquo;ve been interested in these things to varying degrees:
- Reverse engineering x86 assembly Binary exploitation WebAssembly Common Lisp Cryptography Emacs! (&amp;lt;3) Node.js Python  I love talking to fellow nerds, so hit me up if you&amp;rsquo;d like to talk about anything!</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>Pages on What The Blog?</title>
+		<link>https://example.org/page/</link>
+		<description>Recent content in Pages on What The Blog?</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 25 Apr 2018 14:35:16 +0530</lastBuildDate>
+		
+			<atom:link href="https://example.org/page/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>About</title>
+				<link>https://example.org/about/</link>
+				<pubDate>Wed, 25 Apr 2018 14:35:16 +0530</pubDate>
+				<guid>https://example.org/about/</guid>
+				<description>&lt;p&gt;Hi! I&amp;rsquo;m Amaan, and this is my ranty little blog. I like to rant and occasionally&#xA;string together a coherent sentence about technologies that interest me.&lt;/p&gt;&#xA;&lt;p&gt;In the past I&amp;rsquo;ve been interested in these things to varying degrees:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reverse engineering&lt;/li&gt;&#xA;&lt;li&gt;x86 assembly&lt;/li&gt;&#xA;&lt;li&gt;Binary exploitation&lt;/li&gt;&#xA;&lt;li&gt;WebAssembly&lt;/li&gt;&#xA;&lt;li&gt;Common Lisp&lt;/li&gt;&#xA;&lt;li&gt;Cryptography&lt;/li&gt;&#xA;&lt;li&gt;Emacs! (&amp;lt;3)&lt;/li&gt;&#xA;&lt;li&gt;Node.js&lt;/li&gt;&#xA;&lt;li&gt;Python&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I love talking to fellow nerds, so &lt;a href=&#34;https://twitter.com/AmaanC&#34;&gt;hit me up if you&amp;rsquo;d like to talk about&#xA;anything!&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Oh, one last thing! Check out this &lt;a href=&#34;https://g.whatthedude.com/game&#34;&gt;really cool thing I did.&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,81 +1,59 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>gsoc on What The Blog?</title>
-    <link>https://blog.whatthedude.com/tags/gsoc/</link>
-    <description>Recent content in gsoc on What The Blog?</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 13 Aug 2018 14:22:32 +0530</lastBuildDate>
-    
-	<atom:link href="https://blog.whatthedude.com/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>GSoC: The all-encompassing final report</title>
-      <link>https://blog.whatthedude.com/post/gsoc-final/</link>
-      <pubDate>Mon, 13 Aug 2018 14:22:32 +0530</pubDate>
-      
-      <guid>https://blog.whatthedude.com/post/gsoc-final/</guid>
-      <description>Hi! This blog post acts as the final report for GSoC, meant to summarize all of my work in one convenient package.
-Intro TL;DR: My GSoC proposal was to port RTEMS, a real-time operating system, to the Intel/AMD x86-64 architecture.
-(P.S. - RTEMS was recently used on NASA&amp;rsquo;s Parker Solar Probe!)
-Code talks If you&amp;rsquo;re only looking for all the code that was written during this GSoC, the links are here:</description>
-    </item>
-    
-    <item>
-      <title>GSoC: Phase 2 status update</title>
-      <link>https://blog.whatthedude.com/post/gsoc-phase-2-status/</link>
-      <pubDate>Mon, 16 Jul 2018 14:22:32 +0530</pubDate>
-      
-      <guid>https://blog.whatthedude.com/post/gsoc-phase-2-status/</guid>
-      <description>Since our last blog post, I realized that the RTEMS mailing list was a much more convenient method of actually having discussions, and making important decisions. In lieu of that, this blog doesn&amp;rsquo;t include all the decisions that have been made. I&amp;rsquo;ll summarize some of them here.
-Boot method Our very first conundrum was the boot method - how do we make our RTEMS kernel and user application UEFI-aware?</description>
-    </item>
-    
-    <item>
-      <title>gnu-efi integration: kernel.so or loader.so&#43;kernel.elf</title>
-      <link>https://blog.whatthedude.com/post/gnu-efi-kernel-so/</link>
-      <pubDate>Sat, 02 Jun 2018 12:24:39 +0530</pubDate>
-      
-      <guid>https://blog.whatthedude.com/post/gnu-efi-kernel-so/</guid>
-      <description>In this post, we&amp;rsquo;ll discuss the 2 possible methods of integrating gnu-efi into your project to make your kernel / OS &amp;ldquo;UEFI-aware&amp;rdquo; (i.e. capable of booting through UEFI firmware).
-Other options (without using gnu-efi) are laid out in my previous blog post on the topic.
-Relevant context gnu-efi has one key constraint that requires our project&amp;rsquo;s files to be built as shared libraries when linked with libefi and libgnuefi. Namely, from the gnu-efi project&amp;rsquo;s README:</description>
-    </item>
-    
-    <item>
-      <title>Options for creating a UEFI application image</title>
-      <link>https://blog.whatthedude.com/post/uefi-app-options/</link>
-      <pubDate>Fri, 18 May 2018 14:54:32 +0530</pubDate>
-      
-      <guid>https://blog.whatthedude.com/post/uefi-app-options/</guid>
-      <description>Context This post is about some of the ways in which an operating system / kernel can be made to boot as a UEFI application image (through UEFI firmware).
-To be clear, let&amp;rsquo;s make sure we have our definitions straight:
- UEFI firmware: The vendor firmware itself, which may or may not support legacy BIOS options. On the OSDev side, we won&amp;rsquo;t really have control over this. For emulation, I&amp;rsquo;ll be using TianoCore&amp;rsquo;s OVMF (OvmfPkgX64) specifically.</description>
-    </item>
-    
-    <item>
-      <title>Introduction to my GSoC project: An RTEMS x86-64 port</title>
-      <link>https://blog.whatthedude.com/post/rtems-x86-64-port-intro/</link>
-      <pubDate>Wed, 25 Apr 2018 20:08:56 +0530</pubDate>
-      
-      <guid>https://blog.whatthedude.com/post/rtems-x86-64-port-intro/</guid>
-      <description>RTEMS is an RTOS which can run on tons of architectures and processor families within those architectures.
-However, the modern Intel x86-64 / AMD64 is not one of the currently supported architectures.
-&amp;lt;infomerical time&amp;gt;
-Have you ever wanted to try a new operating system for your project, but all the emulators for your target processor support a limited number of features, and you really don&amp;rsquo;t want to have to test it all on your hardware?</description>
-    </item>
-    
-    <item>
-      <title>The Journey to GSoC 2018 - just the beginning</title>
-      <link>https://blog.whatthedude.com/post/journey-to-gsoc/</link>
-      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.whatthedude.com/post/journey-to-gsoc/</guid>
-      <description>Here I&amp;rsquo;ll document some of the preperatory tasks I undertook as part of my proposal to RTEMS (AN RTOS THAT&amp;rsquo;S BEEN TO SPACE! SPAAAAAAAAAACE!).
-The Hunt To start at the beginning, I&amp;rsquo;m going to have to just say that finding an organization that piques your interest and needs a project that hits just the sweet-spot in &amp;ldquo;I have most of the skills to do this, but I&amp;rsquo;ll still need to learn and grow a lot to bring it to fruition&amp;rdquo; is hard.</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>Gsoc on What The Blog?</title>
+		<link>https://example.org/tags/gsoc/</link>
+		<description>Recent content in Gsoc on What The Blog?</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 13 Aug 2018 14:22:32 +0530</lastBuildDate>
+		
+			<atom:link href="https://example.org/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>GSoC: The all-encompassing final report</title>
+				<link>https://example.org/post/gsoc-final/</link>
+				<pubDate>Mon, 13 Aug 2018 14:22:32 +0530</pubDate>
+				<guid>https://example.org/post/gsoc-final/</guid>
+				<description>&lt;p&gt;Hi! This blog post acts as &lt;em&gt;the&lt;/em&gt; final report for GSoC, meant to summarize all&#xA;of my work in one convenient package.&lt;/p&gt;&#xA;&lt;h1 id=&#34;intro&#34;&gt;Intro&lt;/h1&gt;&#xA;&lt;p&gt;TL;DR: My GSoC proposal was to port &lt;a href=&#34;https://www.rtems.org/&#34;&gt;RTEMS&lt;/a&gt;, a real-time&#xA;operating system, to the Intel/AMD x86-64 architecture.&lt;/p&gt;&#xA;&lt;p&gt;(P.S. - &lt;a href=&#34;https://lists.rtems.org/pipermail/users/2018-August/032495.html&#34;&gt;RTEMS was recently used on NASA&amp;rsquo;s Parker Solar&#xA;Probe!&lt;/a&gt;)&lt;/p&gt;&#xA;&lt;h1 id=&#34;code-talks&#34;&gt;Code talks&lt;/h1&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re only looking for all the code that was written during this GSoC, the&#xA;links are here:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gist.github.com/AmaanC/d7817809f2126a01104a2b15437cfc49&#34;&gt;https://gist.github.com/AmaanC/d7817809f2126a01104a2b15437cfc49&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Read on for details that you probably don&amp;rsquo;t understand that put that code in&#xA;context (feel free to email me if you&amp;rsquo;re curious about any, though!).&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>GSoC: Phase 2 status update</title>
+				<link>https://example.org/post/gsoc-phase-2-status/</link>
+				<pubDate>Mon, 16 Jul 2018 14:22:32 +0530</pubDate>
+				<guid>https://example.org/post/gsoc-phase-2-status/</guid>
+				<description>&lt;p&gt;Since our last blog post, I realized that the RTEMS mailing list was a much more&#xA;convenient method of actually having discussions, and making important&#xA;decisions. In lieu of that, this blog doesn&amp;rsquo;t include &lt;em&gt;all&lt;/em&gt; the decisions that&#xA;have been made. I&amp;rsquo;ll summarize some of them here.&lt;/p&gt;&#xA;&lt;h1 id=&#34;boot-method&#34;&gt;Boot method&lt;/h1&gt;&#xA;&lt;p&gt;Our very first conundrum was the boot method - how do we make our RTEMS kernel&#xA;and user application UEFI-aware?&lt;/p&gt;&#xA;&lt;p&gt;The last two posts&#xA;(&lt;a href=&#34;https://example.org/post/uefi-app-options/&#34;&gt;1&lt;/a&gt; &lt;a href=&#34;https://example.org/post/gnu-efi-kernel-so/&#34;&gt;2&lt;/a&gt;)&#xA;discussed some options to consider.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>gnu-efi integration: kernel.so or loader.so&#43;kernel.elf</title>
+				<link>https://example.org/post/gnu-efi-kernel-so/</link>
+				<pubDate>Sat, 02 Jun 2018 12:24:39 +0530</pubDate>
+				<guid>https://example.org/post/gnu-efi-kernel-so/</guid>
+				<description>&lt;p&gt;In this post, we&amp;rsquo;ll discuss the 2 possible methods of integrating &lt;code&gt;gnu-efi&lt;/code&gt; into&#xA;your project to make your kernel / OS &amp;ldquo;UEFI-aware&amp;rdquo; (i.e. capable of booting&#xA;through UEFI firmware).&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://example.org/post/uefi-app-options/&#34;&gt;Other options (without using &lt;code&gt;gnu-efi&lt;/code&gt;) are laid out in my previous blog post&#xA;on the topic.&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;relevant-context&#34;&gt;Relevant context&lt;/h1&gt;&#xA;&lt;p&gt;&lt;code&gt;gnu-efi&lt;/code&gt; has one key constraint that requires our project&amp;rsquo;s files to be built&#xA;as shared libraries when linked with &lt;code&gt;libefi&lt;/code&gt; and &lt;code&gt;libgnuefi&lt;/code&gt;. Namely, from the&#xA;&lt;code&gt;gnu-efi&lt;/code&gt; project&amp;rsquo;s README:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Options for creating a UEFI application image</title>
+				<link>https://example.org/post/uefi-app-options/</link>
+				<pubDate>Fri, 18 May 2018 14:54:32 +0530</pubDate>
+				<guid>https://example.org/post/uefi-app-options/</guid>
+				<description>&lt;h1 id=&#34;context&#34;&gt;Context&lt;/h1&gt;&#xA;&lt;p&gt;This post is about some of the ways in which an operating system / kernel can be&#xA;made to boot as a UEFI application image (through UEFI firmware).&lt;/p&gt;&#xA;&lt;p&gt;To be clear, let&amp;rsquo;s make sure we have our definitions straight:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;UEFI firmware&lt;/strong&gt;: The vendor firmware itself, which may or may not support&#xA;legacy BIOS options. On the OSDev side, we won&amp;rsquo;t really have control over&#xA;this. For emulation, I&amp;rsquo;ll be using &lt;a href=&#34;https://github.com/tianocore/tianocore.github.io/wiki/How-to-build-OVMF&#34;&gt;TianoCore&amp;rsquo;s&#xA;OVMF&lt;/a&gt;&#xA;(OvmfPkgX64) specifically. &lt;a href=&#34;https://devel.rtems.org/wiki/Developer/Simulators/QEMU#QEMUandUEFIusingOVMFEDKII&#34;&gt;More setup instructions&#xA;here.&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;UEFI application image&lt;/strong&gt;: A relocatable &lt;code&gt;PE/COFF&lt;/code&gt; executable file which the&#xA;UEFI firmware loads through a FAT partition, usually the file&#xA;&lt;code&gt;/EFI/BOOT/BOOTX64.EFI&lt;/code&gt; on the filesystem.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;With RTEMS, we use a cross-compiler toolchain (for eg. &lt;code&gt;x86_64-rtems5-gcc&lt;/code&gt;,&#xA;instead of the host computer&amp;rsquo;s &lt;code&gt;gcc&lt;/code&gt;). The toolchain is built automatically by&#xA;the &lt;a href=&#34;http://git.rtems.org/rtems-source-builder&#34;&gt;RTEMS Source Builder (RSB)&lt;/a&gt;,&#xA;which does cool things like pull in a release version of the various tools,&#xA;backports patches that the RTEMS community may need (that are not in a release&#xA;version yet), and compiles the entire toolchain. These tools (&lt;code&gt;gcc&lt;/code&gt;, &lt;code&gt;binutils&lt;/code&gt;,&#xA;etc.) are then used to compile all of the RTEMS kernel, link the kernel to user&#xA;applications, the testsuite, etc.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Introduction to my GSoC project: An RTEMS x86-64 port</title>
+				<link>https://example.org/post/rtems-x86-64-port-intro/</link>
+				<pubDate>Wed, 25 Apr 2018 20:08:56 +0530</pubDate>
+				<guid>https://example.org/post/rtems-x86-64-port-intro/</guid>
+				<description>&lt;p&gt;RTEMS is an RTOS which can run on tons of architectures and processor families&#xA;within those architectures.&lt;/p&gt;&#xA;&lt;p&gt;However, the modern Intel &lt;code&gt;x86-64&lt;/code&gt; / &lt;code&gt;AMD64&lt;/code&gt; is not one of the currently&#xA;supported architectures.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;&amp;lt;infomerical time&amp;gt;&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Have you ever wanted to try a new operating system for your project, but all&#xA;the emulators for your target processor support a limited number of features,&#xA;and you &lt;strong&gt;really&lt;/strong&gt; don&amp;rsquo;t want to have to test it all on your hardware?&lt;/em&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>The Journey to GSoC 2018 - just the beginning</title>
+				<link>https://example.org/post/journey-to-gsoc/</link>
+				<pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
+				<guid>https://example.org/post/journey-to-gsoc/</guid>
+				<description>&lt;p&gt;Here I&amp;rsquo;ll document some of the preperatory tasks I undertook as part of my&#xA;proposal to &lt;a href=&#34;https://www.rtems.org/&#34;&gt;RTEMS&lt;/a&gt; (AN RTOS THAT&amp;rsquo;S BEEN TO&#xA;&lt;!-- raw HTML omitted --&gt;&lt;em&gt;SPACE&lt;/em&gt;&lt;!-- raw HTML omitted --&gt;! &lt;a href=&#34;https://www.youtube.com/watch?v=BVn1oQL9sWg&#34;&gt;SPAAAAAAAAAACE!&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-hunt&#34;&gt;The Hunt&lt;/h1&gt;&#xA;&lt;p&gt;To start at the beginning, I&amp;rsquo;m going to have to just say that finding an&#xA;organization that piques your interest &lt;em&gt;and&lt;/em&gt; needs a project that hits just the&#xA;sweet-spot in &amp;ldquo;I have most of the skills to do this, but I&amp;rsquo;ll still need to&#xA;learn and grow a lot to bring it to fruition&amp;rdquo; is &lt;em&gt;hard&lt;/em&gt;. I oscillated between&#xA;organizations and potential projects for a month easily, until I finally&#xA;stumbled upon RTEMS, at which point I yelled &amp;ldquo;I&amp;rsquo;m going to Mars!&amp;rdquo; repeatedly&#xA;while jumping around the house. (Contributing to anything that&amp;rsquo;s even remotely&#xA;related to space-research has been a dream for years, and the fact that RTEMS&#xA;has such an incredible and approachable community has been incredibly exciting&#xA;to me! :D)&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
