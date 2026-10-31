@@ -26,9 +26,7 @@ to me! :D)
 Despite the excitement, RTEMS intimidated me majorly - their build system (using
 Autotools) is more complicated than any I've worked with before, and it all felt
 like magic that _I_ definitely wasn't cut out
-for:
-
-{{< tweet 981246781102071808 >}}
+for.
 
 # Rise from the ashes
 

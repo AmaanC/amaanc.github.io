@@ -23,9 +23,9 @@ echo "Removing existing files"
 rm -rf public/*
 
 echo "Generating site"
-hugo || exit 1;
+npx hugo || exit 1;
 
-echo "blog.whatthedude.com" > public/CNAME
+# echo "blog.whatthedude.com" > public/CNAME
 
 msg="deploy: `git log -1 --pretty=%B content --`"
 
